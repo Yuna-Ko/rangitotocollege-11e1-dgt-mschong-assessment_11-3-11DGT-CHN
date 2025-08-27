@@ -1,3 +1,24 @@
-body {
-    background-color: blanchedalmond;
+body{
+    margin:0px;
+    background-color:#FFF8E7;
+}
+
+/*Main NAVIGATION area*/
+.NAV{
+    display:grid;
+    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
+    background-color:#0b8800;
+    padding:30px 0px 20px;
+}
+
+/*Sub NAVIAGTION area*/
+.NAV a{
+    align-content: left;
+    color:#23344a;
+    padding:10px 30px 10px;
+    font-size:20px;
+    border-radius:5px;
+}
+.NAV a:hover{
+    background-color:rgb(248, 216, 145);
 }
