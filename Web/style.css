@@ -1,24 +1,32 @@
 body{
     margin:0px;
-    background-color:#FFF8E7;
+    background-color:#e7d5c6;
 }
 
 /*Main NAVIGATION area*/
 .NAV{
     display:grid;
-    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
-    background-color:#0b8800;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color:#e7d5c6;
     padding:30px 0px 20px;
 }
 
 /*Sub NAVIAGTION area*/
 .NAV a{
+    width: 100px;
+    font-family: "VT323", monospace;
     align-content: left;
     color:#23344a;
     padding:10px 30px 10px;
-    font-size:20px;
-    border-radius:5px;
+    font-size:35px;
+    transition: padding 0.5s;
+    border-left-style: solid;
+    border-right-style: solid;
 }
 .NAV a:hover{
-    background-color:rgb(248, 216, 145);
+    background-color:#e7d5c6;
+    color:#0c1725;
+    padding: 10px 40px 10px;
+    border-left-style: solid;
+    border-right-style: solid;
 }
