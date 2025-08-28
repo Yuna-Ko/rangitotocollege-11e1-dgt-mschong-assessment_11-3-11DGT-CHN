@@ -1,32 +1,47 @@
 body{
     margin:0px;
-    background-color:#e7d5c6;
+    background-color:#fff7f0;
 }
 
 /*Main NAVIGATION area*/
 .NAV{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color:#e7d5c6;
-    padding:30px 0px 20px;
+    margin:25px 0px 10px;
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.NAV > div{
+    padding:25px;
 }
 
 /*Sub NAVIAGTION area*/
 .NAV a{
     width: 100px;
+    text-decoration: none;
     font-family: "VT323", monospace;
     align-content: left;
-    color:#23344a;
+    color:#0a3874;
     padding:10px 30px 10px;
     font-size:35px;
-    transition: padding 0.5s;
+    transition: padding 0.3s;
+}
+.NAV a:hover{
+    color:#0a1c35;
+    padding: 10px 45px 10px;
     border-left-style: solid;
     border-right-style: solid;
 }
-.NAV a:hover{
-    background-color:#e7d5c6;
-    color:#0c1725;
-    padding: 10px 40px 10px;
-    border-left-style: solid;
-    border-right-style: solid;
+
+/*Main BODY area*/
+.TOP{
+    display:grid;
+    grid-template-areas:
+    "TOPIMG TOPTXT";
+    background-color:blue;
+    padding:10px;
+    grid-template-columns:1fr 1fr;
+}
+
+.TOP > div{
+    background-color:red;
 }
