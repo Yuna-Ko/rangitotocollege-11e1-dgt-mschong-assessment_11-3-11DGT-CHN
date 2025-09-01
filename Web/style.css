@@ -5,13 +5,16 @@ body{
 
 /*Main NAVIGATION area*/
 .NAV{
-    margin:25px 0px 10px;
-    display:flex;
-    flex-direction:row-reverse;
+    margin-top:40px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
 }
 
-.NAV > div{
-    padding:25px;
+.NAV > div > div{
+    display:inline-block;
+    vertical-align:middle;
+    justify-content:flex-end;
 }
 
 /*Sub NAVIAGTION area*/
@@ -20,16 +23,24 @@ body{
     text-decoration: none;
     font-family: "VT323", monospace;
     align-content: left;
-    color:#0a3874;
+    color:#AD0000;
     padding:10px 30px 10px;
-    font-size:35px;
+    font-size:40px;
     transition: padding 0.3s;
+    display:inline-block;
+    vertical-align:middle;
 }
 .NAV a:hover{
-    color:#0a1c35;
+    color:#630000;
     padding: 10px 45px 10px;
     border-left-style: solid;
     border-right-style: solid;
+}
+
+.NAV img{
+    width:10%;
+    display:inline-block;
+    vertical-align: middle;;
 }
 
 /*Main BODY area*/
@@ -39,9 +50,15 @@ body{
     "TOPIMG TOPTXT";
     background-color:blue;
     padding:10px;
+    margin:40px;
     grid-template-columns:1fr 1fr;
 }
 
 .TOP > div{
     background-color:red;
+}
+
+/*Sub BODY area*/
+.TOPIMG{
+    width:200px;
 }
