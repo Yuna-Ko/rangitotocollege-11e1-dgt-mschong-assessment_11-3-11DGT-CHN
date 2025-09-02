@@ -1,6 +1,14 @@
 body{
     margin:0px;
     background-color:#fff7f0;
+    font-family: "Comfortaa", sans-serif;
+
+}
+/*Horizontal line*/
+hr{
+    border: 2px solid #AD0000;
+    float:center;
+    width: 70%;
 }
 
 /*Main NAVIGATION area*/
@@ -40,25 +48,41 @@ body{
 .NAV img{
     width:10%;
     display:inline-block;
-    vertical-align: middle;;
+
 }
 
 /*Main BODY area*/
+.TOPIMG{
+    grid-area: TOPIMG;
+    display:inline-block;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.TOPTXT{
+    grid-area: TOPTXT;
+    padding:20px;
+}
+
 .TOP{
     display:grid;
     grid-template-areas:
-    "TOPIMG TOPTXT";
-    background-color:blue;
+    "TOPIMG TOPTXT TOPTXT";
     padding:10px;
-    margin:40px;
-    grid-template-columns:1fr 1fr;
+    margin:5% 10% 5%;
+    grid-template-columns:1fr 1fr 1fr;
+    vertical-align:top;
 }
 
 .TOP > div{
-    background-color:red;
+    margin:10px;
 }
 
 /*Sub BODY area*/
-.TOPIMG{
-    width:200px;
+.TOP img{
+    width:250px;
+}
+
+.TOP h1{
+    font-family: "VT323", monospace;
 }
