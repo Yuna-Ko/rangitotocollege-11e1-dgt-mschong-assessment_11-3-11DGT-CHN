@@ -54,14 +54,10 @@ hr{
 /*Main BODY area*/
 .TOPIMG{
     grid-area: TOPIMG;
-    display:inline-block;
-    align-content: center;
-    vertical-align: middle;
 }
 
 .TOPTXT{
     grid-area: TOPTXT;
-    padding:20px;
 }
 
 .TOP{
@@ -71,18 +67,71 @@ hr{
     padding:10px;
     margin:5% 10% 5%;
     grid-template-columns:1fr 1fr 1fr;
-    vertical-align:top;
+    grid-template-rows: 0.2fr 0.5;
+    align-content: center;
+    justify-content: center;
 }
 
 .TOP > div{
-    margin:10px;
+    background-color:blue;
+    margin:5px;
 }
 
 /*Sub BODY area*/
 .TOP img{
-    width:250px;
+    width:50%;
 }
 
 .TOP h1{
     font-family: "VT323", monospace;
+    font-size:55px;
+}
+
+/*Main TOPIC area*/
+.TOPICO{
+    grid-area:TOPICO;
+}
+
+.TOPICF{
+    grid-area:TOPICF;
+}
+
+.TOPICC{
+    grid-area:TOPICC;
+}
+
+.LINKO{
+    grid-area:LINKO;
+}
+
+.LINKF{
+    grid-area:LINKF;
+}
+
+.LINKC{
+    grid-area:LINKC;
+}
+
+.TOPICSEC{
+    display:grid;
+    grid-template-areas:
+    "TOPICO TOPICF TOPICC"
+    "TOPICO TOPICF TOPICC"
+    "TOPICO TOPICF TOPICC"
+    "TOPICO TOPICF TOPICC"
+    "LINKO LINKF LINKC";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:5% 10% 5%;
+    grid-gap:10%;
+}
+
+/*Sub TOPIC area*/
+.TOPICSEC img{
+    width:80%;
+}
+
+.TOPICSEC h2{
+    font-family: "VT323", monospace;
+    font-size:30px;
+
 }
