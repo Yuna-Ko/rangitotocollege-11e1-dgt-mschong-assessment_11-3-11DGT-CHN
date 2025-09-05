@@ -4,6 +4,15 @@ body{
     font-family: "Comfortaa", sans-serif;
 
 }
+
+h1{
+    font-family: "VT323", monospace;
+}
+
+h2{ 
+    font-family: "VT323", monospace;
+}
+
 /*Horizontal line*/
 hr{
     border: 2px solid #AD0000;
@@ -27,7 +36,6 @@ hr{
 
 /*Sub NAVIAGTION area*/
 .NAV a{
-    width: 100px;
     text-decoration: none;
     font-family: "VT323", monospace;
     align-content: left;
@@ -73,7 +81,6 @@ hr{
 }
 
 .TOP > div{
-    background-color:blue;
     margin:5px;
 }
 
@@ -83,7 +90,6 @@ hr{
 }
 
 .TOP h1{
-    font-family: "VT323", monospace;
     font-size:55px;
 }
 
@@ -123,6 +129,7 @@ hr{
     grid-template-columns: 1fr 1fr 1fr;
     margin:5% 10% 5%;
     grid-gap:10%;
+    background-color:red;
 }
 
 /*Sub TOPIC area*/
@@ -131,7 +138,37 @@ hr{
 }
 
 .TOPICSEC h2{
-    font-family: "VT323", monospace;
-    font-size:30px;
+    font-size:35px;
+}
 
+/*Main STUDY area*/
+.STUDYIO{
+    grid-area: STUDYIO;
+}
+
+.STUDYTO{
+    grid-area: STUDYTO;
+}
+
+.STUDYIT{
+    grid-area: STUDYIT;
+}
+
+.STUDYTT{
+    grid-area: STUDYTT;
+}
+
+.STUDYSEC{
+    display:grid;
+    grid-template-areas:
+    "STUDYIO STUDYTO"
+    "STUDYIT STUDYTT";
+    margin:10% 10% 5%;
+    grid-gap:10%;
+    background-color:red;
+}
+
+/*Sub STUDY area*/
+.STUDYSEC img{
+    width:70%;
 }
