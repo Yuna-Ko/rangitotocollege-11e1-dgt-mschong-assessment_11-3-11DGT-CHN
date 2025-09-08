@@ -7,17 +7,19 @@ body{
 
 h1{
     font-family: "VT323", monospace;
+    font-size: 55px;
 }
 
 h2{ 
     font-family: "VT323", monospace;
+    font-size: 35px;
 }
 
 /*Horizontal line*/
 hr{
     border: 2px solid #AD0000;
     float:center;
-    width: 70%;
+    margin: 0% 10% 0%;
 }
 
 /*Main NAVIGATION area*/
@@ -26,6 +28,7 @@ hr{
     display: flex;
     justify-content:space-around;
     align-items:center;
+    margin-bottom:5%;
 }
 
 .NAV > div > div{
@@ -54,7 +57,7 @@ hr{
 }
 
 .NAV img{
-    width:10%;
+    width:35%;
     display:inline-block;
 
 }
@@ -73,11 +76,12 @@ hr{
     grid-template-areas:
     "TOPIMG TOPTXT TOPTXT";
     padding:10px;
-    margin:5% 10% 5%;
+    margin:0% 10% 5%;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 0.2fr 0.5;
     align-content: center;
     justify-content: center;
+    grid-gap:5%;
 }
 
 .TOP > div{
@@ -86,11 +90,7 @@ hr{
 
 /*Sub BODY area*/
 .TOP img{
-    width:50%;
-}
-
-.TOP h1{
-    font-size:55px;
+    width:100%;
 }
 
 /*Main TOPIC area*/
@@ -127,18 +127,13 @@ hr{
     "TOPICO TOPICF TOPICC"
     "LINKO LINKF LINKC";
     grid-template-columns: 1fr 1fr 1fr;
-    margin:5% 10% 5%;
-    grid-gap:10%;
-    background-color:red;
+    margin:5% 10% 10%;
+    grid-gap:5%;
 }
 
 /*Sub TOPIC area*/
 .TOPICSEC img{
-    width:80%;
-}
-
-.TOPICSEC h2{
-    font-size:35px;
+    width:100%;
 }
 
 /*Main STUDY area*/
@@ -161,14 +156,39 @@ hr{
 .STUDYSEC{
     display:grid;
     grid-template-areas:
-    "STUDYIO STUDYTO"
-    "STUDYIT STUDYTT";
-    margin:10% 10% 5%;
-    grid-gap:10%;
-    background-color:red;
+    "STUDYIO STUDYTO STUDYTO"
+    "STUDYIT STUDYTT STUDYTT";
+    margin:5% 10% 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:5%;
 }
-
 /*Sub STUDY area*/
 .STUDYSEC img{
-    width:70%;
+    width:100%;
+}
+
+#STUDYTITLE{
+    text-align: center;
+}
+
+/*Flashcards Heading*/
+.FLASHHEAD{
+    margin:5% 10% 2%;
+}
+
+/*Main FLASHCARD area*/
+.CARD{
+    grid-area:CARD;
+}
+
+.FLASHHINT{
+    grid-area:FLASHHINT;
+}
+
+.FLASHANS{
+    grid
+}
+
+.FLASHSEC{
+    display:grid;
 }
