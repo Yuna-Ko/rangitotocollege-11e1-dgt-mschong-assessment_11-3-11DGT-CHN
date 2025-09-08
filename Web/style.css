@@ -186,9 +186,26 @@ hr{
 }
 
 .FLASHANS{
-    grid
+    grid-area:FLASHANS;
+}
+
+.FLASHSLIDERS{
+    grid-area:FLASHSLIDERS;
+    text-align:center;
 }
 
 .FLASHSEC{
     display:grid;
+    grid-template-areas:
+    "CARD CARD  FLASHHINT FLASHHINT"
+    "CARD CARD  FLASHANS FLASHANS"
+    "FLASHSLIDERS  FLASHSLIDERS FLASHSLIDERS FLASHSLIDERS";
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    margin: 5% 10% 5%;
+    grid-gap: 2%;
+}
+
+/*Sub FLASHCARDS area*/
+.FLASHSEC img{
+    width:100%;
 }
