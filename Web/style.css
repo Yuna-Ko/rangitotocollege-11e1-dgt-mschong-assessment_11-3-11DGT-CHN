@@ -176,36 +176,61 @@ hr{
     margin:5% 10% 2%;
 }
 
-/*Main FLASHCARD area*/
-.CARD{
-    grid-area:CARD;
+/*Main FLASHCARDS area*/
+.CARDS{
+    grid-area:CARDS;
 }
 
 .FLASHHINT{
     grid-area:FLASHHINT;
+    background-color:#AD0000;
+    align-content: center;
+    text-align:center;
 }
 
 .FLASHANS{
     grid-area:FLASHANS;
+    background-color:#AD0000;
+    align-content: center;
+    text-align:center;
 }
 
 .FLASHSLIDERS{
-    grid-area:FLASHSLIDERS;
-    text-align:center;
+    grid-area:FLASHSLIDERS
 }
 
 .FLASHSEC{
     display:grid;
-    grid-template-areas:
-    "CARD CARD  FLASHHINT FLASHHINT"
-    "CARD CARD  FLASHANS FLASHANS"
-    "FLASHSLIDERS  FLASHSLIDERS FLASHSLIDERS FLASHSLIDERS";
-    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "CARDS CARDS CARDS FLASHHINT FLASHHINT"
+    "CARDS CARDS CARDS FLASHANS FLASHANS"
+    "FLASHSLIDERS FLASHSLIDERS FLASHSLIDERS FLASHSLIDERS FLASHSLIDERS";
+    grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+    grid-gap:5%;
     margin: 5% 10% 5%;
-    grid-gap: 2%;
 }
 
 /*Sub FLASHCARDS area*/
-.FLASHSEC img{
+.CARDS img{
     width:100%;
+}
+
+.FLASHSLIDERS{
+    text-align:center;
+}
+
+.FLASHSLIDERS > a{
+    margin:5%;
+}
+
+.FLASHSEC h2{
+    color:#fff7f0;
+}
+
+.FLASHHINT:hover{
+    background-color:#630000;
+}
+
+.FLASHANS:hover{
+    background-color:#630000;
 }

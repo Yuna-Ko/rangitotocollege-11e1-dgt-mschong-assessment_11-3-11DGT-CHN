@@ -13,39 +13,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <script src="index.js"></script>
     <div class="NAV">
       <div class="LOGO">
         <img src="images/logostandin.png" alt="Logo">
       </div>
       <div>
-        <div class="HOME"><a href="home.html">Home</a></div>
+        <div class="HOME"><a href="index.html">Home</a></div>
         <div class="TOPICS"><a href="topics.html">Topics</a></div>
         <div class="STUDY"><a href="study.html">Study</a></div>
       </div>
     </div>
     <hr>
     <div class="FLASHHEAD">
-        <h1>ORGANICS FLASHCARDS</h1>
-        <div class="ORGFCN">
-            <p>x/x</p>
-        </div>
+      <h1>ORGANIC FLASHCARDS</h1>
     </div>
     <hr>
     <div class="FLASHSEC">
+      <div class="CARDS">
         <div class="CARD">
-            <img src="images/bannerstandin.png">
+          <img src="images/bannerstandin.png">
         </div>
-        <div class="FLASHHINT">
-            <button onclick="hintappear()">hint</button>
-            <p class="hidden"></p>
+        <div class="CARD">
+          <img src="images/bannerdraft.png">
         </div>
-        <div class="FLASHANS">
-            <p>ans</p>
+        <div class="CARD">
+          <img src="images/bannerdrafto.png">
         </div>
-        <div class="FLASHSLIDERS">
-            <p>left and right</p>
-        </div>
+      </div>
+      <div class="FLASHHINT">
+        <a><h2>Hint?</h2></a>
+      </div>
+      <div class="FLASHANS">
+        <a><h2>Answer?</h2></a>
+      </div>
+      <div class="FLASHSLIDERS">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
     </div>
+  <script src="script.js"></script>
   </body>
 </html>
