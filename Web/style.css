@@ -56,6 +56,31 @@ hr{
     border-right-style: solid;
 }
 
+.dropdown-content {
+  padding:10%;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropstudy {
+  position: relative;
+  display: inline-block;
+}
+
+.dropstudy a:hover {
+  background-color:#d7e1fa;}
+
+.show {
+  display: block;}
+
+
 .NAV img{
     width:35%;
     display:inline-block;
