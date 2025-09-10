@@ -13,22 +13,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <script src="script.js"></script>
     <div class="NAV">
       <div class="LOGO">
         <img src="images/logostandin.png" alt="Logo">
       </div>
       <div>
-        <div class="HOME"><a href="index.html">Home</a></div>
-        <div class="dropdown"><a href="topics.html">Topics</a></div>
-        <div class="dropstudy">
-          <button onclick="studydropdown" class="dropbtn">EVENTS</button>
-          <div id="drop" class="dropdown-content"><!-- dropdown options-->
-            <a href="orgflash.html">Organics</a>
-            <a href="fuelflash.html">Fuels</a>
-            <a href="calcflash.html">Calculations</a>
-          </div>
+        <div><a href="index.html">Home</a></div>
+        <div class="droptopic">
+          <button class="dropbtnn" onclick="topicdropdown()">Topics</button>
+          <div class="dropdown-content" id="myDropdownt">
+          <a href="orgflash.html">Organics</a>
+          <a href="fuelflash.html">Fuel</a>
+          <a href="calcflash.html">Calculation</a>
         </div>
+        </div>
+        <div class="dropstudy">
+          <button class="dropbtn" onclick="studydropdown()">Study</button>
+          <div class="dropdown-content" id="myDropdown">
+          <a href="orgflash.html">Organics Cards</a>
+          <a href="fuelflash.html">Fuel Cards</a>
+          <a href="calcflash.html">Calculation Cards</a>
+        </div>
+        </div> 
       </div>
     </div>
     <div class="TOP">
@@ -90,5 +96,6 @@
         <p>BLAH BLAH BLAH AVHKAHS</p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

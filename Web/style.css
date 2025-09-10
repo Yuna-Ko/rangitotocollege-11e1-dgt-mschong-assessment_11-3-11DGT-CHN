@@ -56,29 +56,56 @@ hr{
     border-right-style: solid;
 }
 
+.dropstudy, .droptopic {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.dropstudy .dropbtn, .droptopic .dropbtnn {
+  text-decoration: none;
+  font-family: "VT323", monospace;
+  align-content: left;
+  color:#AD0000;
+  padding:10px 30px 10px;
+  font-size:40px;
+  transition: padding 0.3s;
+  display:inline-block;
+  vertical-align:middle;
+  background-color: #fff7f0;
+  border:none;
+}
+
+.dropstudy:hover .dropbtn, .droptopic:hover .dropbtnn{
+  color:#630000; 
+  padding: 10px 45px 10px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
 .dropdown-content {
-  padding:10%;
   display: none;
   position: absolute;
+  background-color: #f9f9f9;
   min-width: 160px;
-  overflow: auto;
   z-index: 1;
 }
 
 .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
+  text-align: left;
 }
 
-.dropstudy {
-  position: relative;
-  display: inline-block;
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
-
-.dropstudy a:hover {
-  background-color:#d7e1fa;}
 
 .show {
-  display: block;}
+  display: block;
+}
 
 
 .NAV img{
