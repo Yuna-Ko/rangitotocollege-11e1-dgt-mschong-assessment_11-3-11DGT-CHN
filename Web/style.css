@@ -57,8 +57,8 @@ hr{
 }
 
 .dropstudy, .droptopic {
+  float: left;
   overflow: hidden;
-  display: inline-block;
 }
 
 .dropstudy .dropbtn, .droptopic .dropbtnn {
@@ -71,12 +71,11 @@ hr{
   transition: padding 0.3s;
   display:inline-block;
   vertical-align:middle;
-  background-color: #fff7f0;
   border:none;
 }
 
-.dropstudy:hover .dropbtn, .droptopic:hover .dropbtnn{
-  color:#630000; 
+.dropstudy:hover .dropbtn, .droptopic:hover .dropbtnn {
+  color:#630000;
   padding: 10px 45px 10px;
   border-left-style: solid;
   border-right-style: solid;
@@ -87,6 +86,7 @@ hr{
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -103,10 +103,9 @@ hr{
   background-color: #ddd;
 }
 
-.show {
+.dropdown:hover .dropdown-content {
   display: block;
 }
-
 
 .NAV img{
     width:35%;
