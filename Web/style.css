@@ -42,7 +42,7 @@ hr{
     text-decoration: none;
     font-family: "VT323", monospace;
     align-content: left;
-    color:#AD0000;
+    color:#630000;
     padding:10px 30px 10px;
     font-size:40px;
     transition: padding 0.3s;
@@ -50,32 +50,32 @@ hr{
     vertical-align:middle;
 }
 .NAV a:hover{
-    color:#630000;
+    color:#AD0000;
     padding: 10px 45px 10px;
     border-left-style: solid;
     border-right-style: solid;
 }
 
 .dropstudy, .droptopic {
-  float: left;
   overflow: hidden;
 }
 
 .dropstudy .dropbtn, .droptopic .dropbtnn {
   text-decoration: none;
-  font-family: "VT323", monospace;
+  font-family: "VT323", sans-serif;
   align-content: left;
-  color:#AD0000;
+  color:#630000;
   padding:10px 30px 10px;
   font-size:40px;
   transition: padding 0.3s;
   display:inline-block;
   vertical-align:middle;
   border:none;
+  background-color: #fff7f0;
 }
 
 .dropstudy:hover .dropbtn, .droptopic:hover .dropbtnn {
-  color:#630000;
+  color:#AD0000;
   padding: 10px 45px 10px;
   border-left-style: solid;
   border-right-style: solid;
@@ -84,26 +84,33 @@ hr{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #AD0000;
+  min-width: 300px;
   z-index: 1;
 }
 
 .dropdown-content a {
+  font-size: 20px;
+  font-family: "Comfortaa", sans-serif;
   float: none;
-  color: black;
-  padding: 12px 16px;
+  color: #fff7f0;
+  padding: 10px 20px 10px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown-content:hover a {
+  color: #fff7f0;
+  border: none;
+  
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content a:hover {
+  background-color: #630000;
+}
+
+.dropstudy:hover .dropdown-content, .droptopic:hover .dropdown-content {
   display: block;
 }
 
