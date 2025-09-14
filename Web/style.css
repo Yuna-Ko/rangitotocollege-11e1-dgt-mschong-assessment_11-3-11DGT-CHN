@@ -8,11 +8,16 @@ body{
 h1{
     font-family: "VT323", monospace;
     font-size: 55px;
+    color:#AD0000;
 }
 
 h2{ 
     font-family: "VT323", monospace;
-    font-size: 35px;
+    font-size: min(2.5em, 5vw);
+}
+
+p{
+    color:#630000;
 }
 
 /*Horizontal line*/
@@ -24,17 +29,22 @@ hr{
 
 /*Main NAVIGATION area*/
 .NAV{
-    margin-top:40px;
-    display: flex;
-    justify-content:space-around;
+    margin-top:3%;
+    display:grid;
+    grid-template-columns: 0.2fr 0.65fr;
     align-items:center;
-    margin-bottom:5%;
+    margin-bottom:7%;
+}
+
+.NAV > div{
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
 }
 
 .NAV > div > div{
     display:inline-block;
     vertical-align:middle;
-    justify-content:flex-end;
 }
 
 /*Sub NAVIAGTION area*/
@@ -44,7 +54,7 @@ hr{
     align-content: left;
     color:#630000;
     padding:10px 30px 10px;
-    font-size:40px;
+    font-size: min(2.5em, 5vw);
     transition: padding 0.3s;
     display:inline-block;
     vertical-align:middle;
@@ -56,68 +66,68 @@ hr{
     border-right-style: solid;
 }
 
+.NAV img{
+    width:min(5em, 7vw);
+    display:inline-block;
+    vertical-align:middle;
+}
+
 .dropstudy, .droptopic {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .dropstudy .dropbtn, .droptopic .dropbtnn {
-  text-decoration: none;
-  font-family: "VT323", sans-serif;
-  align-content: left;
-  color:#630000;
-  padding:10px 30px 10px;
-  font-size:40px;
-  transition: padding 0.3s;
-  display:inline-block;
-  vertical-align:middle;
-  border:none;
-  background-color: #fff7f0;
+    text-decoration: none;
+    font-family: "VT323", sans-serif;
+    align-content: left;
+    color:#630000;
+    padding:10px 30px 10px;
+    font-size: min(2.5em, 5vw);
+    transition: padding 0.3s;
+    display:inline-block;
+    vertical-align:middle;
+    border:none;
+    background-color: #fff7f0;
 }
 
 .dropstudy:hover .dropbtn, .droptopic:hover .dropbtnn {
-  color:#AD0000;
-  padding: 10px 45px 10px;
-  border-left-style: solid;
-  border-right-style: solid;
+    color:#AD0000;
+    padding: 10px 45px 10px;
+    border-left-style: solid;
+    border-right-style: solid;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #AD0000;
-  min-width: 300px;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #AD0000;
+    min-width: 300px;
+    z-index: 1;
 }
 
 .dropdown-content a {
-  font-size: 20px;
-  font-family: "Comfortaa", sans-serif;
-  float: none;
-  color: #fff7f0;
-  padding: 10px 20px 10px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    font-size: min(1.5em, 3vw);
+    font-family: "Comfortaa", sans-serif;
+    float: none;
+    color: #fff7f0;
+    padding: 10px 20px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content:hover a {
-  color: #fff7f0;
-  border: none;
+    color: #fff7f0;
+    border: none;
   
 }
 
 .dropdown-content a:hover {
-  background-color: #630000;
+    background-color: #630000;
 }
 
 .dropstudy:hover .dropdown-content, .droptopic:hover .dropdown-content {
-  display: block;
-}
-
-.NAV img{
-    width:35%;
-    display:inline-block;
-
+    display: block;
 }
 
 /*Main BODY area*/
@@ -291,4 +301,32 @@ hr{
 
 .FLASHANS:hover{
     background-color:#630000;
+}
+
+@media only screen and (max-width: 600px) {
+    /*NAV*/
+    .LOGO{
+        grid-area:LOGO;
+    }
+
+    .NAVBUTTON{
+        grid-area:BUTTONS;
+    }
+
+    .NAV{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "LOGO"
+        "BUTTONS";
+    }
+    
+    .NAV > div{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+    }
+    .dropdown-content {
+        min-width: 200px;
+}
 }
