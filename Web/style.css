@@ -59,6 +59,7 @@ hr{
     display:inline-block;
     vertical-align:middle;
 }
+
 .NAV a:hover{
     color:#AD0000;
     padding: 10px 45px 10px;
@@ -131,7 +132,7 @@ hr{
 }
 
 /* Style the button that is used to open and close the collapsible content */
-.NAVCOLLASP {
+.collapsible {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -144,12 +145,12 @@ hr{
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .NAVCOLLASP:hover {
+.active, .collapsible:hover {
   background-color: #ccc;
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.COLLASPCONTENT {
+.content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
@@ -352,7 +353,8 @@ hr{
         align-items:center;
         flex-direction: column;
     }
+
     .dropdown-content {
         min-width: 200px;
-}
+    }
 }

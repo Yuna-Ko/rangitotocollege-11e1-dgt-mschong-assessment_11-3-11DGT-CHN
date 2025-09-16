@@ -13,35 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <script src="script.js">
-        var coll = document.getElementsByClassName("NAVCOLLASP");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-    </script>
     <div class="NAV">
       <div class="LOGO">
-        <img src="images/PCLOGO.svg" alt="Logo">
+        <img src="images/PCLOGO.svg" alt="Website Logo">
       </div>
-      <div><a href="index.html">Home</a></div>
-        <button class="NAVCOLLASP">Study</button>
-        <div class="COLLASPCONTENT">
-            <h2>HELLOE</h2>
-            <a>hi</a>
-            <br>
-            <h2>HIAHIDHA</h2>
-            <a>oh!</a>
+      <div class="NAVBUTTON">
+        <div><a href="siindex.html">Home</a></div>
+        <div class="droptopic">
+          <button class="dropbtnn">Topics</button>
+          <div class="dropdown-content" id="myDropdownt">
+            <a href="orgstudy.html">Organics</a>
+            <a href="fuelstudy.html">Fuel</a>
+            <a href="calcstudy.html">Calculation</a>
         </div>
+        </div>
+        <div class="dropstudy">
+          <button class="dropbtn">Study</button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="orgflash.html">Organics Cards</a>
+            <a href="fuelflash.html">Fuel Cards</a>
+            <a href="calcflash.html">Calculation Cards</a>
+        </div>
+        </div> 
+      </div>
     </div>
     <div class="TOP">
       <div class="TOPIMG">
@@ -102,5 +96,6 @@ for (i = 0; i < coll.length; i++) {
         <p>BLAH BLAH BLAH AVHKAHS</p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
