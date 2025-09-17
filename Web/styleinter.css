@@ -1,0 +1,303 @@
+body{
+    margin:0px;
+    background-color:#fff7f0;
+    font-family: "Comfortaa", sans-serif;
+
+}
+
+h1{
+    font-family: "VT323", monospace;
+    font-size: 55px;
+    color:#AD0000;
+}
+
+h2{ 
+    font-family: "VT323", monospace;
+    font-size: min(2.5em, 5vw);
+}
+
+p{
+    color:#630000;
+    font-size: min(1.2em, 2vw);
+}
+
+/*Horizontal line*/
+hr{
+    border: 2px solid #AD0000;
+    float:center;
+    margin: 0% 10% 0%;
+}
+
+/*Main NAVIGATION area*/
+.NAV{
+    margin-top:3%;
+    align-items:center;
+    margin-bottom:7%;
+}
+
+/*Sub NAVIAGTION area*/
+.NAV a{
+    text-decoration: none;
+    font-family: "VT323", monospace;
+    align-content: left;
+    color:#630000;
+    padding:10px 30px 10px;
+    font-size: min(2.5em, 5vw);
+    transition: padding 0.3s;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.NAV a:hover{
+    color:#AD0000;
+    padding: 10px 45px 10px;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.NAV img{
+    width:min(5em, 7vw);
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.NAVCOLLAP {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .NAVCOLLAP:hover {
+    background-color: #ccc;
+}
+
+.CONTENTCOLLAP{
+    display:flex;
+    padding:10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.CONTENTCOLLAP > div{
+    margin:5%;
+}
+
+.CONTENTCOLLAP a{
+    font-family: "Comfortaa", sans-serif;
+    font-size: min(1.2em, 2vw);
+    display:block;
+    padding:0px;
+}
+
+.CONTENTCOLLAP:hover a{
+    padding:0px;
+    border:none;
+}
+
+/*Main BODY area*/
+.TOPIMG{
+    grid-area: TOPIMG;
+}
+
+.TOPTXT{
+    grid-area: TOPTXT;
+}
+
+.TOP{
+    display:grid;
+    grid-template-areas:
+    "TOPIMG TOPTXT TOPTXT";
+    padding:10px;
+    margin:0% 10% 5%;
+    grid-template-columns:1.5fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.5;
+    align-content: center;
+    justify-content: center;
+    grid-gap:5%;
+}
+
+.TOP > div{
+    margin:5px;
+}
+
+/*Sub BODY area*/
+.TOP img{
+    width:100%;
+}
+
+/*Main TOPIC area*/
+.TOPICO{
+    grid-area:TOPICO;
+}
+
+.TOPICF{
+    grid-area:TOPICF;
+}
+
+.TOPICC{
+    grid-area:TOPICC;
+}
+
+.LINKO{
+    grid-area:LINKO;
+}
+
+.LINKF{
+    grid-area:LINKF;
+}
+
+.LINKC{
+    grid-area:LINKC;
+}
+
+.TOPICSEC{
+    display:grid;
+    grid-template-areas:
+    "TOPICO TOPICF TOPICC"
+    "TOPICO TOPICF TOPICC"
+    "TOPICO TOPICF TOPICC"
+    "TOPICO TOPICF TOPICC"
+    "LINKO LINKF LINKC";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:5% 10% 10%;
+    grid-gap:5%;
+}
+
+/*Sub TOPIC area*/
+.TOPICSEC img{
+    width:100%;
+}
+
+/*Main STUDY area*/
+.STUDYIO{
+    grid-area: STUDYIO;
+}
+
+.STUDYTO{
+    grid-area: STUDYTO;
+}
+
+.STUDYIT{
+    grid-area: STUDYIT;
+}
+
+.STUDYTT{
+    grid-area: STUDYTT;
+}
+
+.STUDYSEC{
+    display:grid;
+    grid-template-areas:
+    "STUDYIO STUDYTO STUDYTO"
+    "STUDYIT STUDYTT STUDYTT";
+    margin:5% 10% 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:5%;
+}
+/*Sub STUDY area*/
+.STUDYSEC img{
+    width:100%;
+}
+
+#STUDYTITLE{
+    text-align: center;
+}
+
+/*Flashcards Heading*/
+.FLASHHEAD{
+    margin:5% 10% 2%;
+}
+
+/*Main FLASHCARDS area*/
+.CARDS{
+    grid-area:CARDS;
+}
+
+.FLASHHINT{
+    grid-area:FLASHHINT;
+    background-color:#AD0000;
+    align-content: center;
+    text-align:center;
+}
+
+.FLASHANS{
+    grid-area:FLASHANS;
+    background-color:#AD0000;
+    align-content: center;
+    text-align:center;
+}
+
+.FLASHSLIDERS{
+    grid-area:FLASHSLIDERS
+}
+
+.FLASHSEC{
+    display:grid;
+    grid-template-areas: 
+    "CARDS CARDS CARDS FLASHHINT FLASHHINT"
+    "CARDS CARDS CARDS FLASHANS FLASHANS"
+    "FLASHSLIDERS FLASHSLIDERS FLASHSLIDERS FLASHSLIDERS FLASHSLIDERS";
+    grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+    grid-gap:5%;
+    margin: 5% 10% 5%;
+}
+
+/*Sub FLASHCARDS area*/
+.CARDS img{
+    width:100%;
+}
+
+.FLASHSLIDERS{
+    text-align:center;
+}
+
+.FLASHSLIDERS > a{
+    margin:5%;
+}
+
+.FLASHSEC h2{
+    color:#fff7f0;
+}
+
+.FLASHHINT:hover{
+    background-color:#630000;
+}
+
+.FLASHANS:hover{
+    background-color:#630000;
+}
+
+@media only screen and (max-width: 600px) {
+    /*NAV*/
+    .LOGO{
+        grid-area:LOGO;
+    }
+
+    .NAVBUTTON{
+        grid-area:BUTTONS;
+    }
+
+    .NAV{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "LOGO"
+        "BUTTONS";
+    }
+    
+    .NAV > div{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+    }
+
+    .dropdown-content {
+        min-width: 200px;
+    }
+}
