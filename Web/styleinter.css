@@ -36,25 +36,6 @@ hr{
 }
 
 /*Sub NAVIAGTION area*/
-.NAV a{
-    text-decoration: none;
-    font-family: "VT323", monospace;
-    align-content: left;
-    color:#630000;
-    padding:10px 30px 10px;
-    font-size: min(2.5em, 5vw);
-    transition: padding 0.3s;
-    display:inline-block;
-    vertical-align:middle;
-}
-
-.NAV a:hover{
-    color:#AD0000;
-    padding: 10px 45px 10px;
-    border-left-style: solid;
-    border-right-style: solid;
-}
-
 .NAV img{
     width:min(5em, 7vw);
     display:inline-block;
@@ -76,8 +57,20 @@ hr{
     background-color: #ccc;
 }
 
+.contentone{
+    grid-area:contentone;
+}
+
+.contenttwo{
+    grid-area:contenttwo;
+}
+
 .CONTENTCOLLAP{
-    display:flex;
+    display:grid;
+    grid-template-areas: 
+    "contentone contenttwo"
+    "contentone contenttwo";
+    grid-template-columns: 1fr 1fr;
     padding:10px;
     display: none;
     overflow: hidden;
@@ -86,6 +79,7 @@ hr{
 
 .CONTENTCOLLAP > div{
     margin:5%;
+    display: inline-block;
 }
 
 .CONTENTCOLLAP a{
