@@ -37,61 +37,133 @@ hr{
 
 /*Sub NAVIAGTION area*/
 .NAV img{
-    width:min(5em, 7vw);
-    display:inline-block;
+    width:min(4.5em, 7vw);
+    display:inline;
     vertical-align:middle;
+    margin:2% 5% 2%;
 }
 
 .NAVCOLLAP {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+    text-decoration: none;
+    margin-left:2%;
+    font-family: "VT323", sans-serif;
+    color:#630000;
+    padding:0.5em 1em 0.5em;
+    font-size: min(2.5em, 5vw);
+    transition: padding 0.3s;
+    display:inline-block;
+    vertical-align:middle;
+    border:none;
+    background-color: #fff7f0;
 }
 
 .active, .NAVCOLLAP:hover {
-    background-color: #ccc;
+    color:#AD0000;
+    padding: 0.5em 1.8em 0.5em;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.HOMEBUT a {
+    text-decoration: none;
+    margin-left:10%;
+    font-family: "VT323", sans-serif;
+    color:#630000;
+    padding:0.5em 1em 0.5em;
+    font-size: min(2.5em, 5vw);
+    transition: padding 0.3s;
+    display:inline-block;
+    vertical-align:middle;
+    border:none;
+    background-color: none;
+}
+
+.HOMEBUT:hover a {
+    color:#AD0000;
+    padding: 0.5em 1.8em 0.5em;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.HOMEBUT, .CONTENTCOLLAP{
+    display:inline-block;
 }
 
 .contentone{
     grid-area:contentone;
+    color:#fff7f0;
+    text-align:center;
+}
+
+.contentone a{
+    color:#fff7f0;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    display:block;
+    padding:0.5em 1em 0.5em;
+    font-size: min(1.2em, 2vw);
+}
+
+.contentone > a:hover{
+    border-left-style: solid;
+    border-right:solid;
 }
 
 .contenttwo{
     grid-area:contenttwo;
+    color:#fff7f0;
+    text-align:center;
+}
+
+.contenttwo a{
+    color:#fff7f0;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    display:block;
+    padding:0.5em 1em 0.5em;
+    font-size: min(1.2em, 2vw);
+}
+
+.contenttwo > a:hover{
+    border-left-style: solid;
+    border-right:solid;
+}
+
+.contentthree{
+    grid-area:contentthree;
+    color:#fff7f0;
+    text-align:center;
+}
+
+.contentthree a{
+    color:#fff7f0;
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    display:block;
+    padding:0.5em 1em 0.5em;
+    font-size: min(1.2em, 2vw);
+}
+
+.contentthree > a:hover{
+    border-left-style: solid;
+    border-right:solid;
 }
 
 .CONTENTCOLLAP{
     display:grid;
     grid-template-areas: 
-    "contentone contenttwo"
-    "contentone contenttwo";
-    grid-template-columns: 1fr 1fr;
+    "contentone contenttwo contentthree"
+    "contentone contenttwo contentthree";
+    grid-template-columns: 1fr 1fr 1fr;
     padding:10px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #AD0000;
 }
 
 .CONTENTCOLLAP > div{
     margin:5%;
     display: inline-block;
-}
-
-.CONTENTCOLLAP a{
-    font-family: "Comfortaa", sans-serif;
-    font-size: min(1.2em, 2vw);
-    display:block;
-    padding:0px;
-}
-
-.CONTENTCOLLAP:hover a{
-    padding:0px;
-    border:none;
 }
 
 /*Main BODY area*/
@@ -269,29 +341,17 @@ hr{
 
 @media only screen and (max-width: 600px) {
     /*NAV*/
-    .LOGO{
-        grid-area:LOGO;
-    }
-
-    .NAVBUTTON{
-        grid-area:BUTTONS;
-    }
-
-    .NAV{
-        display:grid;
-        grid-template-columns: 1fr;
+    .CONTENTCOLLAP{
         grid-template-areas: 
-        "LOGO"
-        "BUTTONS";
-    }
-    
-    .NAV > div{
-        display: flex;
-        align-items:center;
-        flex-direction: column;
+        "contentone"
+        "contenttwo" 
+        "contentthree";
+        grid-template-columns: 1fr;
     }
 
-    .dropdown-content {
-        min-width: 200px;
+    .NAV img{
+        display:block;
+        margin:auto;
+        overflow:hidden;
     }
 }
