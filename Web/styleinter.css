@@ -33,6 +33,7 @@ hr{
     margin-top:3%;
     align-items:center;
     margin-bottom:7%;
+    margin-left:7%;
 }
 
 /*Sub NAVIAGTION area*/
@@ -210,6 +211,18 @@ hr{
     grid-area:TOPICC;
 }
 
+.IMGO{
+    grid-area:IMGO;
+}
+
+.IMGF{
+    grid-area:IMGF;
+}
+
+.IMGC{
+    grid-area:IMGC;
+}
+
 .LINKO{
     grid-area:LINKO;
 }
@@ -226,9 +239,8 @@ hr{
     display:grid;
     grid-template-areas:
     "TOPICO TOPICF TOPICC"
-    "TOPICO TOPICF TOPICC"
-    "TOPICO TOPICF TOPICC"
-    "TOPICO TOPICF TOPICC"
+    "IMGO IMGF IMGC"
+    "IMGO IMGF IMGC"
     "LINKO LINKF LINKC";
     grid-template-columns: 1fr 1fr 1fr;
     margin:5% 10% 10%;
@@ -239,6 +251,33 @@ hr{
 .TOPICSEC img{
     width:100%;
 }
+
+.TOPICSEC h2{
+    color:#AD0000;
+}
+
+.LINKO, .LINKC, .LINKF{
+    text-align:center;
+}
+
+.LINKO a, .LINKC a, .LINKF a{
+    text-decoration: none;
+    font-family: "VT323", sans-serif;
+    color:#630000;
+    padding:0.5em 1em 0.5em;
+    font-size: min(2em, 2vw);
+    transition: padding 0.3s;
+    border:none;
+    background-color: #fff7f0;
+}
+
+.LINKO:hover a, .LINKC:hover a, .LINKF:hover a{
+    color:#AD0000;
+    padding: 0.5em 3em 0.5em;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
 
 /*Main STUDY area*/
 .STUDYIO{
@@ -266,9 +305,42 @@ hr{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:5%;
 }
+.STUDYBOX{
+    padding-top:3%;
+    padding-bottom:5%;
+    background-color: #AD0000;
+}
 /*Sub STUDY area*/
+.STUDYBOX h1{
+    color:#fff7f0;
+}
+
 .STUDYSEC img{
     width:100%;
+}
+
+.STUDYSEC h2{
+    color:#fff7f0;
+}
+
+.STUDYSEC p{
+    color:#fff7f0;
+}
+
+.STUDYSEC a{
+    text-decoration: none;
+    font-family: "VT323", sans-serif;
+    color:#fff7f0;
+    padding:0.5em 1em 0.5em;
+    font-size: min(2em, 2vw);
+    transition: padding 0.3s;
+    border:none;
+}
+
+.STUDYTO:hover a, .STUDYTT:hover a{
+    padding: 0.5em 3em 0.5em;
+    border-left-style: solid;
+    border-right-style: solid;
 }
 
 #STUDYTITLE{
@@ -341,6 +413,10 @@ hr{
 
 @media only screen and (max-width: 600px) {
     /*NAV*/
+    .NAV {
+        margin-left:none;
+    }
+
     .CONTENTCOLLAP{
         grid-template-areas: 
         "contentone"
