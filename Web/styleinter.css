@@ -33,12 +33,11 @@ hr{
     margin-top:3%;
     align-items:center;
     margin-bottom:7%;
-    margin-left:7%;
 }
 
 /*Sub NAVIAGTION area*/
 .NAV img{
-    width:min(4.5em, 7vw);
+    width:min(4em, 7vw);
     display:inline;
     vertical-align:middle;
     margin:2% 5% 2%;
@@ -46,7 +45,6 @@ hr{
 
 .NAVCOLLAP {
     text-decoration: none;
-    margin-left:2%;
     font-family: "VT323", sans-serif;
     color:#630000;
     padding:0.5em 1em 0.5em;
@@ -331,14 +329,14 @@ hr{
     text-decoration: none;
     font-family: "VT323", sans-serif;
     color:#fff7f0;
-    padding:0.5em 1em 0.5em;
+    padding:0.3em 1em 0.3em 1em;
     font-size: min(2em, 2vw);
     transition: padding 0.3s;
-    border:none;
+    border-left-style: solid;
 }
 
-.STUDYTO:hover a, .STUDYTT:hover a{
-    padding: 0.5em 3em 0.5em;
+.STUDYTO a:hover, .STUDYTT a:hover{
+    padding:0.3em 3em 0.3em;
     border-left-style: solid;
     border-right-style: solid;
 }

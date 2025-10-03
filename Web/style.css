@@ -52,7 +52,7 @@ hr{
     text-decoration: none;
     font-family: "VT323", monospace;
     align-content: left;
-    color:#630000;
+    color:#AD0000;
     padding:0.5em 1em 0.5em;
     font-size: min(2.5em, 5vw);
     transition: padding 0.3s;
@@ -61,7 +61,7 @@ hr{
 }
 
 .NAV a:hover{
-    color:#AD0000;
+    color:#630000;
     padding: 0.5em 1.8em 0.5em;
     border-left-style: solid;
     border-right-style: solid;
@@ -81,7 +81,7 @@ hr{
     text-decoration: none;
     font-family: "VT323", sans-serif;
     align-content: left;
-    color:#630000;
+    color:#AD0000;
     padding:0.5em 1em 0.5em;
     font-size: min(2.5em, 5vw);
     transition: padding 0.3s;
@@ -92,7 +92,7 @@ hr{
 }
 
 .dropstudy:hover .dropbtn, .droptopic:hover .dropbtnn {
-    color:#AD0000;
+    color:#630000;
     padding: 0.5em 1.8em 0.5em;
     border-left-style: solid;
     border-right-style: solid;
