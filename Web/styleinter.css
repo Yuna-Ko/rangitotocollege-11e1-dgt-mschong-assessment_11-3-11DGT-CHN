@@ -2,7 +2,6 @@ body{
     margin:0px;
     background-color:#fff7f0;
     font-family: "Comfortaa", sans-serif;
-
 }
 
 h1{
@@ -260,6 +259,7 @@ hr{
 /*Sub TOPIC area*/
 .TOPICSEC img{
     width:100%;
+    
 }
 
 .TOPICSEC h2{
@@ -312,7 +312,7 @@ hr{
     "STUDYIO STUDYTO STUDYTO"
     "STUDYIT STUDYTT STUDYTT";
     margin:5% 10% 10%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
     grid-gap:5%;
 }
 
@@ -332,6 +332,7 @@ hr{
 
 .STUDYSEC h2{
     color:#fff7f0;
+    margin-top:0.5%;
 }
 
 .STUDYSEC p{
@@ -511,9 +512,12 @@ hr{
         "IMGC"
         "IMGC"
         "LINKC";
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         grid-gap:1%;
-        margin-bottom:5%;
+        margin-bottom:40%;
+        flex-grow:1;
+        flex-grow:1;
+        min-height: 0;
     }
 
     .TOPICSEC h2{
@@ -525,11 +529,14 @@ hr{
         
     }
 
+    .TOPICSEC img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+
     /*STUDY*/
     .STUDYBOX{
         display: grid;
-        position: relative;
-        z-index: 0;
     }
 
     .STUDYSEC{
@@ -542,5 +549,17 @@ hr{
         "STUDYTT";
         grid-template-columns: 1fr;
         grid-gap:1%;
+    }
+
+    .STUDYSEC h2{
+        margin-bottom:2%;
+    }
+
+    .STUDYSEC a{
+        font-size: min(10em, 5vw);
+    }
+
+    .STUDYTO, .STUDYTT{
+        margin-bottom:10%;
     }
 }
