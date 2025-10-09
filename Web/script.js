@@ -53,7 +53,6 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("CARD");
   let ansslides = document.getElementsByClassName("ANSCARD");
-  let slidecounter = document.getElementsByClassName("NUM")
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -65,4 +64,5 @@ function showSlides(n) {
   for (i = 0; i < ansslides.length; i++) {
     ansslides[i].style.display = "none";
   }
+  ansslides[slideIndex-1].style.display = "inline-block";
 }

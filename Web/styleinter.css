@@ -27,7 +27,7 @@ a{
 /*Horizontal line*/
 hr{
     border: 2px solid #AD0000;
-    float:center;
+    text-align: center;
     margin: 0% 10% 0%;
 }
 
@@ -78,7 +78,7 @@ hr{
     display:inline-block;
     vertical-align:middle;
     border:none;
-    background-color: none;
+    background: none;
 }
 
 .HOMEBUT:hover a {
@@ -187,7 +187,7 @@ hr{
     padding:10px;
     margin:0% 10% 5%;
     grid-template-columns:2fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.5;
+    grid-template-rows: 0.2fr 0.5fr;
     align-content: center;
     justify-content: center;
     grid-gap:5%;
@@ -375,7 +375,6 @@ hr{
     grid-area:FLASHANS;
     align-content: center;
     text-align:center;
-    
     margin:0% 2% 0%;
 }
 
@@ -400,6 +399,7 @@ hr{
 .CARDS img{
     width:100%;
 }
+
 .FLASHANS img{
     width:100%;
 }
@@ -413,7 +413,6 @@ hr{
     color:#fff7f0;
 }
 
-
 .prev, .next{
     color:#fff7f0;
     background-color: #AD0000;
@@ -421,6 +420,14 @@ hr{
     padding:0.7em 0.9em 0.7em;
     cursor:pointer;
     user-select:none;
+}
+
+.ANSCARD img{
+    display:none;
+}
+
+.hide {
+    display:none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -442,7 +449,7 @@ hr{
     }
     /*NAV*/
     .NAV {
-        margin-left:none;
+        margin-left:0%;
     }
 
     .CONTENTCOLLAP{
