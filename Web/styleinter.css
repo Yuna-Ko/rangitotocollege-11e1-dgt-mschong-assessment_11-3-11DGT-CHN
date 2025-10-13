@@ -368,14 +368,12 @@ hr{
 /*Main FLASHCARDS area*/
 .CARDS{
     grid-area:CARDS;
-    margin:2.5% 2% 2%;
 }
 
 .FLASHANS{
     grid-area:FLASHANS;
     align-content: center;
     text-align:center;
-    margin:0% 2% 0%;
 }
 
 .FLASHSLIDERS{
@@ -387,17 +385,23 @@ hr{
 .FLASHSEC{
     display:grid;
     grid-template-areas: 
-    "CARDS CARDS CARDS FLASHANS FLASHANS"
-    "CARDS CARDS CARDS FLASHANS FLASHANS"
-    "CARDS CARDS CARDS FLASHSLIDERS FLASHSLIDERS";
-    grid-template-columns: 1fr 1fr 0.8fr 1fr 1fr;
+    "CARDS"
+    "FLASHANS"
+    "FLASHSLIDERS";
+    grid-template-columns: 1fr ;
     grid-gap:2%;
-    margin: 5% 10% 5%;
+    margin: 10%;
 }
 
 /*Sub FLASHCARDS area*/
 .CARDS img{
     width:100%;
+    margin:5% 10% 5%;
+}
+
+#cover{
+    width:100%;
+    margin:5% 10% 5%;
 }
 
 .FLASHANS img{
@@ -422,12 +426,8 @@ hr{
     user-select:none;
 }
 
-.ANSCARD img{
-    display:none;
-}
-
-.hide {
-    display:none;
+#cover{
+    display:inline-block;
 }
 
 @media only screen and (max-width: 600px) {
