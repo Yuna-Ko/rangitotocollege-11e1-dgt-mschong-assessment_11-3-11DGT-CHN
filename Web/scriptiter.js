@@ -41,34 +41,31 @@ for (i = 0; i < coll.length; i++) {
 }
 
 //Based off W3school's slides tutorial
-let cover  = document.getElementById('cover');
 let slides = document.getElementsByClassName("CARD");
-let ansslides = document.getElementsByClassName("ANSCARD");
-cover.style.display = "inline-block";
+let anscont = document.getElementById("anstxtcont");
+let anstext = document.getElementsByClassName("ANSTEXT");
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
-  cover.style.display = "inline-block";
-  slides.style.display = "none";
-  ansslides.style.display = "none";
-
+  anscont.style.display = "none";
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
-    cover.style.display = "inline-block";
-    slides.style.display = "none";
-    ansslides.style.display = "none";
 }
+anscont.style.display = "none";
 
-function toggle(){
-  if (cover.style.display == "inline-block"){
-    cover.style.display = "none";
-    change();
-  }
+function showans(){
+    if(anscont.style.display == "none"){
+        anscont.style.display = "inline-block";
+        anstext[slideIndex-1].style.display = "inline-block";
+    }else{
+        anscont.style.display = "none";
+    }
 }
 
 function showSlides(n) {
@@ -80,14 +77,9 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "inline-block";
 
-  if (n > ansslides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = ansslides.length}
-  for (i = 0; i < ansslides.length; i++) {
-    ansslides[i].style.display = "none";
+  if (n > anstext.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = anstext.length}
+  for (i = 0; i < anstext.length; i++) {
+    anstext[i].style.display = "none";
   }
-}
-function change(){
-  if (cover.style.display == "none"){
-      ansslides[slideIndex-1].style.display = "inline-block";
-    }
 }

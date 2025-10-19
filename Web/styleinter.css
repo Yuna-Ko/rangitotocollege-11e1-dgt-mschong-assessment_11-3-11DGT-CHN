@@ -29,6 +29,7 @@ hr{
     border: 2px solid #AD0000;
     text-align: center;
     margin: 0% 10% 0%;
+    position:relative;
 }
 
 /*Main NAVIGATION area*/
@@ -48,7 +49,7 @@ hr{
 
 .NAVCOLLAP {
     text-decoration: none;
-    margin-left:1.5%;
+    margin-left:3%;
     font-family: "VT323", sans-serif;
     color:#AD0000;
     padding:0.5em 1em 0.5em;
@@ -185,7 +186,7 @@ hr{
     "TOPIMG TOPTXT TOPTXT"
     "TOPIMG TOPTXT TOPTXT";
     padding:10px;
-    margin:0% 10% 5%;
+    margin:0% 10% 15%;
     grid-template-columns:2fr 1fr 1fr;
     grid-template-rows: 0.2fr 0.5fr;
     align-content: center;
@@ -365,9 +366,15 @@ hr{
     margin:5% 10% 2%;
 }
 
+.FLASHHEAD h1{
+    margin-left:1%;
+}
+
 /*Main FLASHCARDS area*/
 .CARDS{
     grid-area:CARDS;
+    align-content: center;
+    text-align:center;
 }
 
 .FLASHANS{
@@ -385,49 +392,67 @@ hr{
 .FLASHSEC{
     display:grid;
     grid-template-areas: 
-    "CARDS"
-    "FLASHANS"
-    "FLASHSLIDERS";
-    grid-template-columns: 1fr ;
+    "CARDS CARDS CARDS FLASHANS FLASHANS"
+    "CARDS CARDS CARDS FLASHSLIDERS FLASHSLIDERS";
+    grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
     grid-gap:2%;
-    margin: 10%;
+    margin: 4% 10% 5%;
 }
 
 /*Sub FLASHCARDS area*/
 .CARDS img{
     width:100%;
-    margin:5% 10% 5%;
 }
 
-#cover{
-    width:100%;
-    margin:5% 10% 5%;
+.CARD{
+    display:none;
 }
 
 .FLASHANS img{
-    width:100%;
+    text-align: left;
+    width:90%;
+    margin-top:2%;
+}
+
+.FLASHSLIDERS{
+    user-select: none;
+}
+
+.FLASHSLIDERS a{
+    margin:10%;
 }
 
 .FLASHSLIDERS > a{
     font-size: min(1.2em, 2vw);
-    margin:5%;
+    margin:10%;
+    padding:0.3em 1em 0.3em 1em;
+    transition: padding 0.3s;
 }
+
+.FLASHSLIDERS > a:hover{
+    color:#630000;
+    padding:0.3em 3em 0.3em;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
 
 .FLASHSEC h2{
     color:#fff7f0;
 }
 
 .prev, .next{
-    color:#fff7f0;
-    background-color: #AD0000;
-    border-radius:100%;
-    padding:0.7em 0.9em 0.7em;
+    color:#AD0000;
     cursor:pointer;
-    user-select:none;
+    
 }
 
 #cover{
     display:inline-block;
+}
+
+.counter{
+    margin-left:1%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -506,7 +531,7 @@ hr{
     }
 
     .TOPTXT h1{
-        margin-top:2%;
+        margin-top:40%;
     }
 
     /*TOPIC*/
@@ -538,7 +563,6 @@ hr{
 
     .LINKO a, .LINKC a, .LINKF a{
         font-size: min(10em, 5vw);
-        
     }
 
     .TOPICSEC img{
@@ -591,5 +615,26 @@ hr{
         padding:0.3em 3em 0.3em;
         border-left-style: solid;
         border-right-style: solid;
+    }
+
+    /*FLASHCARD*/
+    .FLASHSEC{
+        grid-template-areas: 
+        "FLASHSLIDERS"
+        "CARDS"
+        "FLASHANS";
+        grid-template-columns: 1fr;
+    }
+
+    .FLASHHEAD{
+        text-align: center;
+    }
+
+    .FLASHHEAD h1{
+        margin-left:0%;
+    }
+
+    .FLASHSLIDERS > a{
+        font-size: min(9em, 4vw);
     }
 }
