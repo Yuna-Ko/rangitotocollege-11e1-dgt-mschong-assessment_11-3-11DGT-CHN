@@ -44,6 +44,7 @@ for (i = 0; i < coll.length; i++) {
 let slides = document.getElementsByClassName("CARD");
 let anscont = document.getElementById("anstxtcont");
 let anstext = document.getElementsByClassName("ANSTEXT");
+let icon = document.getElementById("ansicon");
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -52,19 +53,23 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
   anscont.style.display = "none";
+  icon.style.display = "none"
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 anscont.style.display = "none";
+icon.style.display = "none";
 
 function showans(){
     if(anscont.style.display == "none"){
-        anscont.style.display = "inline-block";
-        anstext[slideIndex-1].style.display = "inline-block";
+      icon.style.display = "inline-block";
+      anscont.style.display = "inline-block";
+      anstext[slideIndex-1].style.display = "inline-block";
     }else{
-        anscont.style.display = "none";
+      anscont.style.display = "none";
+      icon.style.display = "none"
     }
 }
 

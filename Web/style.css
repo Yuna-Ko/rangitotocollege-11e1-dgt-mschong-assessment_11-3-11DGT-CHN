@@ -377,41 +377,88 @@ hr{
     text-align:center;
 }
 
-.FLASHANS{
-    grid-area:FLASHANS;
-    align-content: center;
-    text-align:center;
-}
-
 .FLASHSLIDERS{
     grid-area:FLASHSLIDERS;
     text-align:center;
     margin-top:0%;
 }
 
+.answerbutton{
+    grid-area:ansbut;
+    text-decoration: none;
+    font-family: "VT323", sans-serif;
+    color:#AD0000;
+    padding:0.5em 2em 0.5em;
+    font-size: min(2em, 2vw);
+    transition: width 0.3s;
+    border:none;
+    border-left-style: solid;
+    border-right-style: solid;
+    background-color: #fff7f0;
+    width:20%;
+    margin:auto;
+}
+
+.txtcont{
+    grid-area:anstxt;
+    text-align:left;
+    margin-left:2%;
+}
+
+.aicon{
+    grid-area:iconc;
+}
+
+.FLASHANS{
+    grid-area:FLASHANS;
+    align-content: center;
+    text-align:center;
+}
+
 .FLASHSEC{
     display:grid;
     grid-template-areas: 
-    "CARDS CARDS CARDS FLASHANS FLASHANS"
-    "CARDS CARDS CARDS FLASHSLIDERS FLASHSLIDERS";
-    grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+    "CARDS"
+    "FLASHSLIDERS"
+    "ansbut"
+    "FLASHANS";
+    grid-template-columns: 1fr;
     grid-gap:2%;
     margin: 4% 10% 5%;
+    align-content: center;
+}
+
+.FLASHANS{
+    display:grid;
+    grid-template-areas: 
+    "iconc anstxt";
+    grid-template-columns: 0.1fr 1fr;
+    grid-gap:1%;
+    margin-left:20%;
+    margin-right:20%;
 }
 
 /*Sub FLASHCARDS area*/
+.answerbutton:hover{
+    width: 30%;
+    color:#fff7f0;
+    background-color:#630000;
+    border:none;
+}
+
 .CARDS img{
-    width:100%;
+    width:90%;
 }
 
 .CARD{
     display:none;
 }
 
-.FLASHANS img{
-    text-align: left;
-    width:90%;
-    margin-top:2%;
+.aicon img{
+    margin:auto;
+    vertical-align: middle;
+    width:min(4em, 7vw);
+    display:inline;
 }
 
 .FLASHSLIDERS{
@@ -424,16 +471,24 @@ hr{
 
 .FLASHSLIDERS > a{
     font-size: min(1.2em, 2vw);
-    margin:10%;
+    margin:17%;
     padding:0.3em 1em 0.3em 1em;
     transition: padding 0.3s;
+    border-style: solid;
+    border:#AD0000;
+    border-radius:10%;
+    background-color:#AD0000;
+    color:#fff7f0;
+
 }
 
-.FLASHSLIDERS > a:hover{
+.FLASHSLIDERS > a:hover, .activet{
     color:#630000;
+    background-color:#fff7f0;
     padding:0.3em 3em 0.3em;
     border-left-style: solid;
     border-right-style: solid;
+    border-radius:0%;
 }
 
 
@@ -620,8 +675,8 @@ hr{
     /*FLASHCARD*/
     .FLASHSEC{
         grid-template-areas: 
-        "FLASHSLIDERS"
         "CARDS"
+        "FLASHSLIDERS"
         "FLASHANS";
         grid-template-columns: 1fr;
     }
