@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITLE</title>
-    <link rel="stylesheet" href="styleinter.css">
+    <link rel="stylesheet" href="style.css">
     
     <!---FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,9 +39,140 @@
       </div>
     </div>
     <hr>
-    <h1>ORGANIC CHEMISTRY</h1>
-    <p><b>What even is it?</b> Organic chemistry is the study of carbon compounds (except for carbon oxides and carbonates).</p>
-    
+    <div class="orgstudy">
+      <div class="tonavbutt"> <!--Anchor to easily navigate back to sub-navigation-->
+        <a href="#tonav">⮝</a>
+      </div>
+      <button class="subnavcollap" id="tonav">NAVIGATION</button> <!--Button for collapible content-->
+      <div class="subnavcont"> <!--Collapsible content-->
+        <a href="#oc">Organic Chemistry</a> <!--Anchor point to relevant place on page-->
+        <a href="#nandd">Naming & Drawing</a>
+        <a href="#dkoc">Different kinds of compounds (Naming & Drawing)</a>
+        <a href="#is">Isomers</a>
+      </div>
+      <div class="secone">
+        <h1 id="oc">ORGANIC CHEMISTRY</h1> <!--Heading and introductory content-->
+        <h2>What even is organic chemistry?</h2>
+        <p>Organics is the facet of chemistry that studies carbon compounds. 
+          Many carbon comppunds exist, with many more still undiscovered as carbon compounds come in all kinds of shapes and sizes!</p>
+      </div>
+      <hr>
+      <div class="sectwo">
+        <div class="sectwohead"> <!--Topic sections heading and information-->
+          <h2 id="nandd">Naming & Drawing</h2>
+          <p>To start off with, we'll be learning how to draw and name organic compounds.</p>
+        </div>
+        <div class="sectwoimgo">
+          <img src="images/orgtopic/orgstructureimg.png" alt="Image showing different forms of ethane"> <!--Relevant to information image-->
+        </div>
+        <div class="sectwotxto">  
+          <p>In this image, different forms of the carbon compound <b>ethane</b> is seen!<br>
+          1. This form is called "expanded structural formula." This is where all bonds are shown.<br><br>
+          2. This form is called "condensed formula." This is where the groups and bonds of a compound are shown in a line without bond lines.<br><br>
+          3. This form is called "skeletal formula." This is where only the bonds between carbons and hydrogens are drawn without the symbol C and H.<br><br>
+          </p>
+        </div>
+        <div class="sectwotxtt">
+          <p>The amount of carbons in a compound are shown through simple prefixes, as shown:</p>
+        </div>
+        <div class="sectwoimgt">  
+          <img src="images/orgtopic/carbonprefiximg.png" alt="Chart of carbon prefixes">
+        </div>
+      </div>
+      <div class="secthree">
+        <div class="secthreehead">
+          <h2 id="dkoc">Different kinds of compounds (Naming & Drawing)</h2>
+          <p>In organic chemistry, there are different kinds of bonds that can occur.<br><br></p>
+        </div>
+        <div class="betweenstho">
+          <p><b>Alkanes</b><br>
+          Alkanes have been the only compounds you've encountered thus far!
+          They can be identified when:<br><br>
+          1. Compound only has single bonds between carbons and hydrogens.<br><br>
+          2. In the name has the suffix -ane.<br><br>
+          3. Compound follows the general formula of CₙH₂ₙ₊₂.</p>
+        </div>
+        <div class="secthreeimgo">
+          <img src="images/orgtopic/ethaneimg.png" alt="Expanded structural formula of ethane">
+        </div>
+        <div class="secthreetxto">
+          <p>Ethane (as you know)<br>
+          1. Only has single bonds between carbons and hydrogens.<br><br>
+          2. The name "ethane" has the suffix of -ane.<br><br>
+          3. C₂H₆, 2 carbons and 6 hydrogens. Follows the general formula!<br><br></p>
+        </div>
+        <div class="betweenstht">
+          <p><b>Alkenes</b><br>
+          Alkenes are unstable compounds and can be identified when:<br><br>
+          1. The carbon compound has at least 1 double bond (two bonds between carbons).<br><br>
+          2. In the name has the suffix -ene.<br><br>
+          3. Compound follows the general formula of CₙH₂ₙ.</p>
+        </div>
+        <div class="secthreeimgt">
+          <img src="images/orgtopic/but2eneimg.png" alt="Expanded structural formula of but-2-ene">
+        </div>
+        <div class="secthreetxtt">
+          <p>But-2-ene<br>
+          1. On carbon 2 and 3 there is a double bond (c=c).<br><br>
+          2. The name "but-2-ene" has the suffix of -ene and the positiion of the double bond before the -ene.<br><br>
+          3. C₄H₈, 4 carbons and 8 hydrogens. Once again, follows the general formula!<br><br></p>
+        </div>
+        <div class="betweensthth">
+          <p><b>Alcohols</b><br>
+          Alcohols are compounds that contain a hydroxyl functional group and can be identified when:<br><br>
+          1. The carbon compound has an OH bonded to a carbon.<br><br>
+          2. In the name has the suffix -ol.<br><br>
+          3. Compound generally has O in its molecular formula.</p>
+        </div>
+        <div class="secthreeimgth">
+          <img src="images/orgtopic/but2olimg.png" alt="Expanded structural formula of but-2-ene">
+        </div>
+        <div class="secthreetxtth">
+          <p>Butan-2-ol<br>
+          1. On carbon 2 there is an OH.<br><br>
+          2. The name "butan-2-ol" has the suffix of -ol and the positiion of the OH before the -ol.<br><br>
+          3. C₄H₁₀O, 4 carbons, 10 hydrogens, and an oxygen. Has O in its molecular formula.<br><br></p>
+        </div>
+        <div class="betweensthf">
+          <p><b>Haloalkanes</b><br>
+          Haloalkanes are compounds that contain a functional group and can be identified when:<br><br>
+          1. The carbon compound has a F(fluorine), Cl(chlorine), B(bromine), ane/or I(iodo).<br><br>
+          2. In the name has the prefix Fluoro-, Chloro-, Bromo-, and/or Iodo-.<br><br>
+          3. Compound generally has the relevant group in the molecular formula.</p>
+        </div>
+        <div class="secthreeimgf">
+          <img src="images/orgtopic/fluoro2butaneimg.png" alt="Expanded structural formula of but-2-ene">
+        </div>
+        <div class="secthreetxtf">
+          <p>Fluoro-2-butane<br>
+          1. On carbon 2 there is a fluorine.<br><br>
+          2. The name "fluoro-2-butane" has the prefix of -fluoro and the positiion of the F after the fluoro.<br><br>
+          3. C₄H₉O, 4 carbons, 9 hydrogens, and a fluorine. Has F in its molecular formula.<br><br></p>
+        </div>
+      </div>
+      <div class="secfour">
+        <div class="secfourhead">
+          <h2 id="is">Isomers</h2>
+          <p>Due to the wide range of organic compounds in the world, many compounds will share the same elements but still be different!<br><br>
+          For example:</p>
+        </div>
+        <div class="secfourimgo">
+          <img src="images/orgtopic/isomereximg.png" alt="Condesed structural formula of two structural isomers">
+        </div>
+        <div class="secfourtxto">
+          <p>The one on the left is 2-methylpropane whereas the one on the right is butane.<br>
+          While they may be different compounds, both follow the molecular of C₄H₁₀ having 4 carbons and 10 hydrogens.<br>
+          Compounds with the same molecular formula but different names / atom placements are called structural isomers.<br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="FOOTER">
+      <h2>CONTACT ME</h2>
+      <p>Email: <a a href="mailto:178826@cloud.rangitoto.school.nz">178826@cloud.rangitoto.school.nz</a></p>
+      <p>Phone: 021 xxx xxxx</p>
+      <p>Made with stress and love, Yuna. K!</p>
+    </div>
   <script src="script.js"></script>
   </body>
 </html>

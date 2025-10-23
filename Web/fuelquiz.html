@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITLE</title>
-    <link rel="stylesheet" href="styleinter.css">
+    <link rel="stylesheet" href="style.css">
     
     <!---FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,107 @@
       </div>
     </div>
     <hr>
-    <p>fuel quiz</p>
+    <div class="quiz">
+      <h1>FUELS QUIZ</h1> <!--Heading-->
+      <p><span class="quiznotice">Please answer all questions for an answer and good luck!</span></p>
+      <hr>
+      <!---MC questions-->
+      <p><b>1. Which of the statements about complete combustion is true?</b></p>
+      <div class="mcquest">
+        <input type="radio" name="Q1" id="owrongo" value="0"><!--Information to make question option-->
+        <label for="owrongo">Produces CO</label><br> <!--Actual question option content-->
+
+        <input type="radio" name="Q1" id="oright" value="1">
+        <label for="oright">Creates a blue coloured flame</label><br> <!--Value is one so during point counting, this option is chosen, a point is gained-->
+
+        <input type="radio" name="Q1" id="owrongt" value="0">
+        <label for="owrongt">Produces less energy than incomplete combustion</label><br>
+
+        <input type="radio" name="Q1" id="owrongth" value="0">
+        <label for="owrongth">Has partial oxidation</label><br>
+      </div>
+      <p><b>2. Which statement is true about fuel impacts?</b></p>
+      <div class="mcquest">
+        <input type="radio" name="Q2" id="twrongo" value="0">
+        <label for="twrongo">The Earth absorbs longwaves <br>
+          and emits shortwaves back to space</label><br>
+
+        <input type="radio" name="Q2" id="twrongt" value="0">
+        <label for="twrongt">O₂ aborbs longwave radiation</label><br>
+
+        <input type="radio" name="Q2" id="twrongth" value="0">
+        <label for="twrongth">CH₄ is produced in larger amounts than CO₂ <br>
+          therefore it's 20x better at absorbing longwaves</label><br>
+
+        <input type="radio" name="Q2" id="tright" value="1">
+        <label for="tright">CO₂ build up in ocean lowers ocean pH</label><br>
+      </div>
+    <!---Checkbox questions-->
+      <p><b>3. Tick all products of incomplete combustion from the list below.<br>
+      (Not all of them are listed)</b></p>
+      <div class="cbquest">
+        <input type="checkbox" name="thrighto" id="thrighto" value="thrighto" class="Q3"> <!--Given "right" so during point counting, it can be evaluated whether or not the correct tick was marked--> 
+        <label  for="thrighto">CO₂</label><br>
+
+        <input type="checkbox" name="thrightt" id="thrightt" value="thrightt" class="Q3">
+        <label  for="thrightt">CO</label><br>
+
+        <input type="checkbox" name="thwrongo" id="thwrongo" value="thwrongo" class="Q3">
+        <label  for="thwrongo">N</label><br>
+
+        <input type="checkbox" name="thwrongt" id="thwrongt" value="thwrongt" class="Q3">
+        <label  for="thwrongt">CO₃</label><br>
+      </div>
+      <p><b>4. Tick all true statements about fuel impacts</b></p>
+      <div class="cbquest">
+        <input type="checkbox" name="fwrongo" id="fwrongo" value="fwrongo" class="Q4">
+        <label  for="fwrongo">Non-renewable fuels can be replaced</label><br>
+
+        <input type="checkbox" name="frighto" id="frighto" value="frighto" class="Q4">
+        <label  for="frighto">Non-renewable fuels increase net-carbon</label><br>
+
+        <input type="checkbox" name="fwrongt" id="fwrongt" value="fwrongt" class="Q4">
+        <label  for="fwrongt">Renewable fuels take up small amounts of land</label><br>
+
+        <input type="checkbox" name="fwrongth" id="fwrongth" value="fwrongth" class="Q4">
+        <label  for="fwrongth">Renewable fuels increase net carbon</label><br>
+      </div>
+    <!---More MC questions-->
+      <p><b>5. 250g of water is heated from 20 to 100 degrees celcius.<br>
+      This requires 0.025kg of methan fuel to be burnt.<br>
+      Find energy.</b></p>
+      <div class="mcquest">
+        <input type="radio" name="Q5" id="fiwrongo" value="0">
+        <label for="fiwrongo">83608.36J</label><br>
+
+        <input type="radio" name="Q5" id="fiwrongt" value="0">
+        <label for="fiwrongt">91960J</label><br>
+
+        <input type="radio" name="Q5" id="firight" value="1">
+        <label for="firight">75240J</label><br>
+
+        <input type="radio" name="Q5" id="fiwrongth" value="0">
+        <label for="fiwrongth">83600J</label><br>
+      </div>
+      <p><b>6. 0.6kg of water wa heated above a spirit burner.<br>
+      The temp increased from 21 ro 46 degrees celcius.<br>
+      The mass of the spirit burner decreased by 1.5g.<br>
+      The specific heat energy is 19593.75J/g.</b></p>
+      <div class="imgmcquest">
+        <input type="radio" name="Q6" id="sright" value="1">
+        <label for="sright">True</label><br>
+
+        <input type="radio" name="Q6" id="swrongt" value="0">
+        <label for="swrongt">False</label><br>
+      </div>
+      <button onclick = "submitni()">SUBMIT</button>
+    </div>
+    <div class="FOOTER">
+      <h2>CONTACT ME</h2>
+      <p>Email: <a a href="mailto:178826@cloud.rangitoto.school.nz">178826@cloud.rangitoto.school.nz</a></p>
+      <p>Phone: 021 xxx xxxx</p>
+      <p>Made with stress and love, Yuna. K!</p>
+    </div>
   <script src="script.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITLE</title>
-    <link rel="stylesheet" href="styleinter.css">
+    <link rel="stylesheet" href="style.css">
     
     <!---FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,100 +39,118 @@
       </div>
     </div>
     <hr>
-    <div class="FLASHHEAD">
+    <div class="FLASHHEAD"> <!--Heading content container-->
       <h1>FUEL FLASHCARDS</h1>
-      <p><span id="NUM">1</span>/x</p>
+      <p><span id="NUM">1</span>/13</p> <!--Counter showing card number againt the amount fo cards-->
     </div>
     <hr>
     <div class="FLASHSEC">
       <div class="CARDS">
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash1.png">
+          <img src="images/fuelflashcards/fuelflash1.png" alt="Fuel flashcards 1"> <!--Flashcards card-->
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash2.png">
+          <img src="images/fuelflashcards/fuelflash2.png" alt="Fuel flashcards 2">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash3.png">
+          <img src="images/fuelflashcards/fuelflash3.png" alt="Fuel flashcards 3">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash4.png">
+          <img src="images/fuelflashcards/fuelflash4.png" alt="Fuel flashcards 4">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash5.png">
+          <img src="images/fuelflashcards/fuelflash5.png" alt="Fuel flashcards 5">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash6.png">
+          <img src="images/fuelflashcards/fuelflash6.png" alt="Fuel flashcards 6">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash7.png">
+          <img src="images/fuelflashcards/fuelflash7.png" alt="Fuel flashcards 7">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash8.png">
+          <img src="images/fuelflashcards/fuelflash8.png" alt="Fuel flashcards 8">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash9.png">
+          <img src="images/fuelflashcards/fuelflash9.png" alt="Fuel flashcards 9">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash10.png">
+          <img src="images/fuelflashcards/fuelflash10.png" alt="Fuel flashcards 10">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash11.png">
+          <img src="images/fuelflashcards/fuelflash11.png" alt="Fuel flashcards 11">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash12.png">
+          <img src="images/fuelflashcards/fuelflash12.png" alt="Fuel flashcards 11">
         </div>
         <div class="CARD">
-          <img src="images/fuelflashcards/fuelflash13.png">
+          <img src="images/fuelflashcards/fuelflash13.png" alt="Fuel flashcards 13">
         </div>
-        
       </div>
+      <button class="answerbutton" onclick="showans()">ANSWER?</button> <!--Show answer button-->
       <div class="FLASHANS">
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha1.png" alt="Flashcard answer 1">
+        <div class="aicon">
+          <img id="ansicon" src="images/answericon.png" alt="Flashcards correct answer icon"> <!--Icon for answers-->
         </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha2.png" alt="Flashcard answer 1">
+        <div id="anstxtcont" class="txtcont">
+          <div class="ANSTEXT"> <!--Flashcards card answer-->
+            <p>CO₂ and H₂O.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>CO₂, H₂O, CO, and C.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>Complete combustion burns with full oxidation, produces high energy, and creates blue flames.<br>
+            Incomplete combustion burns with partial oxidation, produces low energy, and creates yellow flames.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>e = q/m.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>q = mc∆T.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>The sun emits electromagnetic shortwave radition onto Earth.<br>
+            The Earth aborbs this and emits back longwaves.<br>
+            Gases absorb and remit these longwaves in all directions, including the Earth.<br>
+            This results in a heat energy increase on Earth / net increase of warmth.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>CO₂ from the atmosphere dissolves into the ocean causing buildup which forms carbonic acid, lowering pH.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>Solid carbon particles is breathed into the lungs causing irritation which can lead to lung cancer.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>CO gas enters into the bloodstream via the lungs then binds to haemoglobin.<br>
+            This prevents proper oxygen transfer around the body which can result in death.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>Displaces oxygen causing shortness of breath. <br>
+            In very high concentrations it can also lower blood pH, which is fatal.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>Renewable fuels can be reasonably replaced, doesn't increase net carbon in the atmosphere, and takes up a lot of space.<br>
+            Non-renewable fuels can not be replaced easily and increases net carbon in the atmosphere as carbon from below is dug up.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>At 5+ chains.</p>
+          </div>
+          <div class="ANSTEXT">
+            <p>A chemical reaction that occurs when a substance reacts with oxygen gas, producing heat and light energy.</p>
+          </div>
         </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha3.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha4.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha5.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha6.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha7.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha8.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha9.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha10.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha11.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha12.png" alt="Flashcard answer 1">
-        </div>
-        <div class="ANSCARD">
-          <img src="images/fuelflashcards/fuelflasha13.png" alt="Flashcard answer 1">
-        </div>
-        
       </div>
-      <div class="FLASHSLIDERS">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="FLASHSLIDERS"> <!--Buttons to move between cards-->
+
+        <a class="prev" onclick="dec();plusSlides(-1);">&#10094;</a>
+        <a class="next" onclick="inc();plusSlides(1);">&#10095;</a>
       </div>
+    </div>
+    <div class="FOOTER">
+      <h2>CONTACT ME</h2>
+      <p>Email: <a a href="mailto:178826@cloud.rangitoto.school.nz">178826@cloud.rangitoto.school.nz</a></p>
+      <p>Phone: 021 xxx xxxx</p>
+      <p>Made with stress and love, Yuna. K!</p>
     </div>
   <script src="script.js"></script>
   </body>

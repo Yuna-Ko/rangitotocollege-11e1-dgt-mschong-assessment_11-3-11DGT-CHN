@@ -1,3 +1,67 @@
+function submit(){
+  var qos= parseInt(document.querySelector('input[name="Q1"]:checked').value);
+  var qts= parseInt(document.querySelector('input[name="Q2"]:checked').value);
+  var checkth = document.querySelectorAll(".Q3:checked");
+  var thans = [];
+  var checkf = document.querySelectorAll(".Q4:checked");
+  var fans = [];
+  var qfis= parseInt(document.querySelector('input[name="Q5"]:checked').value);
+  var qss= parseInt(document.querySelector('input[name="Q6"]:checked').value);
+  checkth.forEach(function(element){thans.push(element.value);});
+  if (!thans.includes("thwrongo") && !thans.includes("thwrongt") && !thans.includes("thwrongth") && thans.includes("thrighto")){
+    var qths = 1;
+  } else{
+    qths = 0;
+  }
+
+  checkf.forEach(function(element){fans.push(element.value);});
+  if (!fans.includes("fwrongo") && !fans.includes("fwrongt") && fans.includes("frighto") && fans.includes("frightt")){
+    var qfs = 1;
+  } else{
+    qfs = 0;
+  }
+
+  total = qos + qts + qths + qfs + qfis + qss;
+
+  if(total > 3){
+    alert("Congrats, your score is: " + total + "/6. What an organic chemistry whizz!");
+  }else{
+    alert("Your score is: " + total + "/6. Maybe it's nigh time you hit the books?");
+  }
+}
+
+function submitni(){
+  var qos= parseInt(document.querySelector('input[name="Q1"]:checked').value);
+  var qts= parseInt(document.querySelector('input[name="Q2"]:checked').value);
+  var checkth = document.querySelectorAll(".Q4:checked");
+  var thans = [];
+  var checkf = document.querySelectorAll(".Q3:checked");
+  var fans = [];
+  var qfis= parseInt(document.querySelector('input[name="Q5"]:checked').value);
+  var qss= parseInt(document.querySelector('input[name="Q6"]:checked').value);
+  checkth.forEach(function(element){thans.push(element.value);});
+  if (!thans.includes("fwrongo") && !thans.includes("fwrongt") && !thans.includes("fwrongth") && thans.includes("frighto")){
+    var qths = 1;
+  } else{
+    qths = 0;
+  }
+
+  checkf.forEach(function(element){fans.push(element.value);});
+  if (!fans.includes("thwrongo") && !fans.includes("thwrongt") && fans.includes("thrighto") && fans.includes("thrightt")){
+    var qfs = 1;
+  } else{
+    qfs = 0;
+  }
+
+  total = qos + qts + qths + qfs + qfis + qss;
+
+  if(total > 3){
+    alert("Congrats, your score is: " + total + "/6. What an organic chemistry whizz!");
+  }else{
+    alert("Your score is: " + total + "/6. Maybe it's nigh time you hit the books?");
+  }
+}
+
 let c = 1, cc = 1;
 
 const count = document.getElementById("NUM");
@@ -26,6 +90,7 @@ function update(){
 
 //Based off W3school's collapsible content tutorial
 var coll = document.getElementsByClassName("NAVCOLLAP");
+var collsub = document.getElementsByClassName("subnavcollap");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -40,35 +105,49 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+for (i = 0; i < collsub.length; i++) {
+  collsub[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "grid") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "grid";
+    }
+  });
+}
+
 //Based off W3school's slides tutorial
-let cover  = document.getElementById('cover');
 let slides = document.getElementsByClassName("CARD");
-let ansslides = document.getElementsByClassName("ANSCARD");
-cover.style.display = "inline-block";
+let anscont = document.getElementById("anstxtcont");
+let anstext = document.getElementsByClassName("ANSTEXT");
+let icon = document.getElementById("ansicon");
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
-  cover.style.display = "inline-block";
-  slides.style.display = "none";
-  ansslides.style.display = "none";
-
+  anscont.style.display = "none";
+  icon.style.display = "none"
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
-    cover.style.display = "inline-block";
-    slides.style.display = "none";
-    ansslides.style.display = "none";
 }
+anscont.style.display = "none";
+icon.style.display = "none";
 
-function toggle(){
-  if (cover.style.display == "inline-block"){
-    cover.style.display = "none";
-    change();
-  }
+function showans(){
+    if(anscont.style.display == "none"){
+      icon.style.display = "inline-block";
+      anscont.style.display = "inline-block";
+      anstext[slideIndex-1].style.display = "inline-block";
+    }else{
+      anscont.style.display = "none";
+      icon.style.display = "none"
+    }
 }
 
 function showSlides(n) {
@@ -80,14 +159,9 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "inline-block";
 
-  if (n > ansslides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = ansslides.length}
-  for (i = 0; i < ansslides.length; i++) {
-    ansslides[i].style.display = "none";
+  if (n > anstext.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = anstext.length}
+  for (i = 0; i < anstext.length; i++) {
+    anstext[i].style.display = "none";
   }
-}
-function change(){
-  if (cover.style.display == "none"){
-      ansslides[slideIndex-1].style.display = "inline-block";
-    }
 }

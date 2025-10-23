@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITLE</title>
-    <link rel="stylesheet" href="styleinter.css">
+    <link rel="stylesheet" href="style.css">
     
     <!---FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,102 @@
       </div>
     </div>
     <hr>
-    <p>org quiz</p>
+    <div class="quiz">
+      <h1>ORGANICS QUIZ</h1> <!--Heading-->
+      <p><span class="quiznotice">Please answer all questions for an answer and good luck!</span></p>
+      <hr>
+      <!---MC questions-->
+      <p><b>1. How many isomers does 1-Fluorobutane have?</b></p>
+      <div class="mcquest">
+        <input type="radio" name="Q1" id="owrongo" value="0"> <!--Information to make question option-->
+        <label for="owrongo">4</label><br> <!--Actual question option content-->
+
+        <input type="radio" name="Q1" id="owrongt" value="0">
+        <label for="owrongt">5</label><br>
+
+        <input type="radio" name="Q1" id="oright" value="1"> <!--Value is one so during point counting, this option is chosen, a point is gained-->
+        <label for="oright">3</label><br>
+
+        <input type="radio" name="Q1" id="owrongth" value="0">
+        <label for="owrongth">2</label><br>
+      </div>
+      <p><b>2. From left to right, classify whether the compound is primary, secondary, or tertiary:<br>
+        3-Fluoropentane, 1-Chloro-2-methylbutane, 5,6-dimethyloctan-4-ol</b></p>
+      <div class="mcquest">
+        <input type="radio" name="Q2" id="twrongo" value="0">
+        <label for="twrongo">Primary, tertiary, secondary</label><br>
+
+        <input type="radio" name="Q2" id="twrongt" value="0">
+        <label for="twrongt">Secondary, tertiary, tertiary</label><br>
+
+        <input type="radio" name="Q2" id="twrongth" value="0">
+        <label for="twrongth">Secondary, secondary, tertiary</label><br>
+
+        <input type="radio" name="Q2" id="tright" value="1">
+        <label for="tright">Secondary, tertiary, secondary</label><br>
+      </div>
+    <!---Checkbox questions-->
+      <p><b>3. Which of the following are tertiary compounds?</b></p>
+      <div class="cbquest">
+        <input type="checkbox" name="thwrongo" id="thwrongo" value="thwrongo" class="Q3">
+        <label  for="thwrongo">2,3,4-trimethylpentan-1-ol</label><br>
+
+        <input type="checkbox" name="thrighto" id="thrighto" value="thrighto" class="Q3"> <!--Given "right" so during point counting, it can be evaluated whether or not the correct tick was marked-->
+        <label  for="thrighto">2-methylpentan-1-ol</label><br>
+
+        <input type="checkbox" name="thwrongt" id="thwrongt" value="thwrongt" class="Q3">
+        <label  for="thwrongt">3-fluoro-2-ethylhexane</label><br>
+
+        <input type="checkbox" name="thwrongth" id="thwrongth" value="thwrongth" class="Q3">
+        <label  for="thwrongth">2-fluoro-2-methylbutane</label><br>
+      </div>
+      <p><b>4. Which reactions are substitution?</b></p>
+      <div class="cbquest">
+        <input type="checkbox" name="frighto" id="frighto" value="frighto" class="Q4">
+        <label  for="frighto">Propane ===> 2-bromopropane</label><br>
+
+        <input type="checkbox" name="fwrongo" id="fwrongo" value="fwrongo" class="Q4">
+        <label  for="fwrongo">Butan-2-ol ===> but-1-ene</label><br>
+
+        <input type="checkbox" name="frightt" id="frightt" value="frightt" class="Q4">
+        <label  for="frightt">Ethanol ===> chloroethane</label><br>
+
+        <input type="checkbox" name="fwrongt" id="fwrongt" value="fwrongt" class="Q4">
+        <label  for="fwrongt">But-2-ene ===> butan-2-ol</label><br>
+      </div>
+    <!---Image MC questions-->
+      <p><b>5. Name this compound</b></p>
+      <div class="imgmcquest">
+        <img src="images/quizquestion/orgq5.png" alt="Image question 5 in organics"><br>
+        <input type="radio" name="Q5" id="fiwrongo" value="0">
+        <label for="fiwrongo">1-Chloro-3,5-dimethylhept-7-en-4-ol</label><br>
+
+        <input type="radio" name="Q5" id="fiwrongt" value="0">
+        <label for="fiwrongt">7-Chloro-3,5-dimethylheptan-4-ol</label><br>
+
+        <input type="radio" name="Q5" id="fiwrongth" value="0">
+        <label for="fiwrongth">6-Chloro-2,4-dimethylhex-1-en-3-ol</label><br>
+
+        <input type="radio" name="Q5" id="firight" value="1">
+        <label for="firight">7-Chloro-3,5-dimethylhept-1-en-4-ol</label><br>
+      </div>
+      <p><b>6. True or flase, are all of the compound C₄H₈'s isomers present?</b></p>
+      <div class="imgmcquest">
+        <img src="images/quizquestion/orgq5.png" alt="Image question 5 in organics"><br>
+        <input type="radio" name="Q6" id="swrong" value="0">
+        <label for="swrong">True</label><br>
+
+        <input type="radio" name="Q6" id="sright" value="1">
+        <label for="sright">False</label><br>
+      </div>
+      <button onclick = "submit()">SUBMIT</button>
+    </div>
+    <div class="FOOTER">
+      <h2>CONTACT ME</h2>
+      <p>Email: <a a href="mailto:178826@cloud.rangitoto.school.nz">178826@cloud.rangitoto.school.nz</a></p>
+      <p>Phone: 021 xxx xxxx</p>
+      <p>Made with stress and love, Yuna. K!</p>
+    </div>
   <script src="script.js"></script>
   </body>
 </html>

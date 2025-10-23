@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TITLE</title>
-    <link rel="stylesheet" href="styleinter.css">
+    <link rel="stylesheet" href="style.css">
     
     <!---FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,101 @@
       </div>
     </div>
     <hr>
-    <p>calc quiz</p>
+    <div class="quiz">
+      <h1>CALCULATIONS QUIZ</h1> <!--Heading-->
+      <p><span class="quiznotice">Please answer all questions for an answer and good luck!</span></p>
+      <hr>
+      <!---MC questions-->
+      <p><b>1. CH₄ + 2O ==> CO₂ + 2H₂O<br>
+      How much carbon dioxide gas is created if 50g of methane is burnt?</b></p>
+      <div class="mcquest">
+        <input type="radio" name="Q1" id="owrongo" value="0"> <!--Information to make question option-->
+        <label for="owrongo">3.125g</label><br> <!--Actual question option content-->
+
+        <input type="radio" name="Q1" id="owrongt" value="0">
+        <label for="owrongt">50g</label><br>
+
+        <input type="radio" name="Q1" id="owrongth" value="0">
+        <label for="owrongth">100g</label><br>
+
+        <input type="radio" name="Q1" id="oright" value="1"> <!--Value is one so during point counting, this option is chosen, a point is gained-->
+        <label for="oright">138g</label><br>
+      </div>
+      <p><b>2. What is the empirical formula of a compound that is <br>
+        66.7% carbon, 11.1% hydrogen and 22.2% oxygen by mass.<br></b></p>
+      <div class="mcquest">
+        <input type="radio" name="Q2" id="twrongo" value="0">
+        <label for="twrongo">C₄H₇.₉₉O</label><br>
+
+        <input type="radio" name="Q2" id="twrongt" value="0">
+        <label for="twrongt">C₂H₃</label><br>
+
+        <input type="radio" name="Q2" id="twrongth" value="0">
+        <label for="twrongth">CHO</label><br>
+
+        <input type="radio" name="Q2" id="tright" value="1">
+        <label for="tright">C₄H₈O</label><br>
+      </div>
+    <!---Checkbox questions-->
+      <p><b>3. Which of the following molecular formulas could be coverted by dividing them by 2?</b></p>
+      <div class="cbquest">
+        <input type="checkbox" name="thwrongo" id="thwrongo" value="thwrongo" class="Q3">
+        <label  for="thwrongo">C₆H₁₂O₆</label><br>
+
+        <input type="checkbox" name="thrighto" id="thrighto" value="thrighto" class="Q3"> <!--Given "right" so during point counting, it can be evaluated whether or not the correct tick was marked-->
+        <label  for="thrighto">CH₃COOH</label><br>
+
+        <input type="checkbox" name="thwrongt" id="thwrongt" value="thwrongt" class="Q3">
+        <label  for="thwrongt">C₈H₁₄</label><br>
+
+        <input type="checkbox" name="thwrongth" id="thwrongth" value="thwrongth" class="Q3">
+        <label  for="thwrongth">C₈H₈</label><br>
+      </div>
+      <p><b>4. Which of the following molecular formulas could be coverted by dividing them by 4?</b></p>
+      <div class="cbquest">
+        <input type="checkbox" name="frighto" id="frighto" value="frighto" class="Q4">
+        <label  for="frighto">C₄H₈</label><br>
+
+        <input type="checkbox" name="frightt" id="frightt" value="frightt" class="Q4">
+        <label  for="frightt">C₈H₁₂</label><br>
+
+        <input type="checkbox" name="fwrongo" id="fwrongo" value="fwrongo" class="Q4">
+        <label  for="fwrongo">C₆H₁₂O₃</label><br>
+
+        <input type="checkbox" name="fwrongt" id="fwrongt" value="fwrongt" class="Q4">
+        <label  for="fwrongt">C₄H₁₀</label><br>
+      </div>
+    <!---More MC questions-->
+      <p><b>5. What is the empirical formula of a compound that is 5.9% hydrogen and 94.1% oxygen by mass.</b></p>
+      <div class="imgmcquest">
+        <input type="radio" name="Q5" id="fiwrongo" value="0">
+        <label for="fiwrongo">O₆H₁₀</label><br>
+
+        <input type="radio" name="Q5" id="fiwrongt" value="0">
+        <label for="fiwrongt">O₂H</label><br>
+
+        <input type="radio" name="Q5" id="fiwrongth" value="0">
+        <label for="fiwrongth">O₁.₂H₃</label><br>
+
+        <input type="radio" name="Q5" id="firight" value="1">
+        <label for="firight">OH</label><br>
+      </div>
+      <p><b>6. In the equation n = m/M, if molar mass was doubled, mol would double.</b></p>
+      <div class="imgmcquest">
+        <input type="radio" name="Q6" id="swrong" value="0">
+        <label for="swrong">True</label><br>
+
+        <input type="radio" name="Q6" id="sright" value="1">
+        <label for="sright">False</label><br>
+      </div>
+      <button onclick = "submit()">SUBMIT</button>
+    </div>
+    <div class="FOOTER">
+      <h2>CONTACT ME</h2>
+      <p>Email: <a a href="mailto:178826@cloud.rangitoto.school.nz">178826@cloud.rangitoto.school.nz</a></p>
+      <p>Phone: 021 xxx xxxx</p>
+      <p>Made with stress and love, Yuna. K!</p>
+    </div>
   <script src="script.js"></script>
   </body>
 </html>

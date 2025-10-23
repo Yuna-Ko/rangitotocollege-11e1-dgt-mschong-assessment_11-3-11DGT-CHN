@@ -1,3 +1,4 @@
+/*Universal content, generally to set the base of something*/
 body{
     margin:0px;
     background-color:#fff7f0;
@@ -13,6 +14,7 @@ h1{
 h2{ 
     font-family: "VT323", monospace;
     font-size: min(2.5em, 5vw);
+    color:#AD0000;
 }
 
 p{
@@ -23,31 +25,54 @@ p{
 a{
     font-family: "VT323", monospace;
 }
+/*Footer*/
+.FOOTER{ /*Footer container*/
+    text-align: center;
+    margin-bottom: 0%;
+    padding:1% 5% 2%;
+    margin:5% 20% 5%;
+    border-right-style: solid;
+    border-left-style: solid;
+    color:#AD0000;
+}
+
+.FOOTER h2{
+    color:#AD0000;
+}
+.FOOTER a{
+    font-size: min(1.2em, 2vw);
+    font-family: "Comfortaa", sans-serif;
+    text-decoration: none;
+    color:#630000;
+}
+
+.FOOTER p{
+    font-size: min(1.2em, 2vw);
+}
 
 /*Horizontal line*/
-hr{
+hr{ /*Styling for content separator*/
     border: 2px solid #AD0000;
     text-align: center;
     margin: 0% 10% 0%;
-    position:relative;
 }
 
 /*Main NAVIGATION area*/
-.NAV{
+.NAV{ /*Main navigation container*/
     margin-top:3%;
     align-items:center;
     margin-bottom:7%;
 }
 
 /*Sub NAVIAGTION area*/
-.NAV img{
+.NAV img{ /*Navigation logo*/
     width:min(4em, 7vw);
     display:inline;
     vertical-align:middle;
     margin:2% 5% 2% 11.5%;
 }
 
-.NAVCOLLAP {
+.NAVCOLLAP { /*Navigation button for collapsible content*/
     text-decoration: none;
     margin-left:3%;
     font-family: "VT323", sans-serif;
@@ -61,14 +86,14 @@ hr{
     background-color: #fff7f0;
 }
 
-.active, .NAVCOLLAP:hover {
+.active, .NAVCOLLAP:hover { /*Changed styling when hovering over + activity*/
     color:#630000;
     padding: 0.5em 1.8em 0.5em;
     border-left-style: solid;
     border-right-style: solid;
 }
 
-.HOMEBUT a {
+.HOMEBUT a { /*Styling for hom button*/
     text-decoration: none;
     margin-left:10%;
     font-family: "VT323", sans-serif;
@@ -89,17 +114,21 @@ hr{
     border-right-style: solid;
 }
 
-.HOMEBUT, .CONTENTCOLLAP{
+.HOMEBUT, .CONTENTCOLLAP{ /*To get the link to sit next to eachother properly*/
     display:inline-block;
 }
 
-.contentone{
+.CONTENTCOLLAP h2{
+    color:#fff7f0;
+}
+
+.contentone{ /*Linking the div with an  area*/
     grid-area:contentone;
     color:#fff7f0;
     text-align:center;
 }
 
-.contentone a{
+.contentone a{ /*Links in collapsible content*/
     color:#fff7f0;
     text-decoration: none;
     display:block;
@@ -150,7 +179,7 @@ hr{
     border-right:solid;
 }
 
-.CONTENTCOLLAP{
+.CONTENTCOLLAP{ /*Collapsible content container + set the position of the collap content sections*/
     display:grid;
     grid-template-areas: 
     "contentone contenttwo contentthree"
@@ -180,7 +209,7 @@ hr{
     grid-area: TOPSUBT;
 }
 
-.TOP{
+.TOP{ /*Positioning relevant cotent*/
     display:grid;
     grid-template-areas:
     "TOPIMG TOPTXT TOPTXT"
@@ -199,7 +228,7 @@ hr{
 }
 
 /*Sub BODY area*/
-.TOP img{
+.TOP img{ /*Ensure image fits into the grid rather than going by its own size*/
     width:100%;
 }
 
@@ -244,7 +273,7 @@ hr{
     grid-area:LINKC;
 }
 
-.TOPICSEC{
+.TOPICSEC{ /*Positioning relevant cotent*/
     display:grid;
     grid-template-areas:
     "TOPICO TOPICF TOPICC"
@@ -260,7 +289,6 @@ hr{
 /*Sub TOPIC area*/
 .TOPICSEC img{
     width:100%;
-    
 }
 
 .TOPICSEC h2{
@@ -308,7 +336,7 @@ hr{
     grid-area: STUDYTT;
 }
 
-.STUDYSEC{
+.STUDYSEC{ /*Positioning relevant cotent*/
     display:grid;
     grid-template-areas:
     "STUDYIO STUDYTO STUDYTO"
@@ -318,7 +346,7 @@ hr{
     grid-gap:5%;
 }
 
-.STUDYBOX{
+.STUDYBOX{ /*For the background of relevant content*/
     padding-top:3%;
     padding-bottom:5%;
     background-color: #AD0000;
@@ -397,6 +425,7 @@ hr{
     background-color: #fff7f0;
     width:20%;
     margin:auto;
+    user-select: none;
 }
 
 .txtcont{
@@ -415,7 +444,7 @@ hr{
     text-align:center;
 }
 
-.FLASHSEC{
+.FLASHSEC{ /*Positioning relevant cotent*/
     display:grid;
     grid-template-areas: 
     "CARDS"
@@ -428,7 +457,7 @@ hr{
     align-content: center;
 }
 
-.FLASHANS{
+.FLASHANS{ /*Positioning relevant cotent*/
     display:grid;
     grid-template-areas: 
     "iconc anstxt";
@@ -482,8 +511,9 @@ hr{
 
 }
 
-.FLASHSLIDERS > a:hover, .activet{
+.FLASHSLIDERS > a:hover{
     color:#630000;
+    border:#630000;
     background-color:#fff7f0;
     padding:0.3em 3em 0.3em;
     border-left-style: solid;
@@ -510,7 +540,500 @@ hr{
     margin-left:1%;
 }
 
-@media only screen and (max-width: 600px) {
+/*Main STUDYGUIDE area*/
+.orgstudy, .fuelstudy, .calcstudy{
+    margin:5% 10% 10%;
+}
+
+.sectwoimgo{
+    grid-area:orgtio;
+}
+
+.sectwotxto{
+    margin-top:2%;
+    grid-area:orgtto;
+}
+
+.sectwoimgt{
+    grid-area:orgtit;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.sectwotxtt{
+    grid-area:orgttt;
+}
+
+.sectwohead{
+    grid-area:orgth;
+}
+
+.sectwo{ /*Positioning relevant cotent*/
+    margin-top:5%;
+    display:grid;
+    grid-gap:1%;
+    grid-template-areas: 
+    "orgth orgth"
+    "orgtio orgtto"
+    "orgttt orgttt"
+    "orgtit orgtit";
+    grid-template-columns: 0.4fr 1fr;
+    margin-bottom:10%;
+}
+
+.secone{
+    margin-top:7%;
+}
+
+.secthreeimgo{
+    grid-area:orgthio;
+}
+
+.secthreetxto{
+    grid-area:orgthto;
+}
+
+.secthreeimgt{
+    grid-area:orgthit;
+}
+
+.secthreetxtt{
+    grid-area:orgthtt;
+}
+
+.secthreeimgth{
+    grid-area:orgthith;
+}
+
+.secthreetxtth{
+    grid-area:orgthtth;
+}
+
+.secthreeimgf{
+    grid-area:orgthif;
+}
+
+.secthreetxtf{
+    grid-area:orgthtf;
+}
+
+.betweenstho{
+    grid-area:bstho;
+}
+
+.betweenstht{
+    grid-area:bstht;
+}
+
+.betweensthth{
+    grid-area:bsthth;
+}
+.betweensthf{
+    grid-area:bsthf;
+}
+
+.secthreehead{
+    grid-area:orgthh;
+}
+
+.secthree{ /*Positioning relevant cotent*/
+    grid-gap:1%;
+    display:grid;
+    grid-template-areas: 
+    "orgthh orgthh"
+    "bstho bstho"
+    "orgthio orgthto"
+    "bstht bstht"
+    "orgthit orgthtt"
+    "bsthth bsthth"
+    "orgthith orgthtth"
+    "bsthf bsthf"
+    "orgthif orgthtf";
+    grid-template-columns: 0.4fr 1fr;
+    margin-bottom:10%;
+}
+
+.secfourimgo{
+    grid-area:orgfio;
+}
+
+.secfourtxto{
+    grid-area:orgfto;
+}
+
+.secfourhead{
+    grid-area:orgfh;
+}
+
+.secfour{ /*Positioning relevant cotent*/
+    grid-gap:1%;
+    display:grid;
+    grid-template-areas: 
+    "orgfh orgfh"
+    "orgfio orgfio"
+    "orgfto orgfto";
+    grid-template-columns: 0.4fr 1fr;
+}
+
+.fuelsectwohead{
+    grid-area:fuelth;
+}
+
+.fuelsectwoimgo{
+    grid-area:fueltio;
+}
+
+.fuelsectwotxto{
+    grid-area:fueltto;
+    margin-right:5%;
+}
+
+.fuelsectwotxtt{
+    grid-area:fuelttt;
+    margin-right:5%;
+}
+
+.fuelsecone{
+    margin-top:7%;
+}
+
+.fuelsectwo{ /*Positioning relevant cotent*/
+    margin-top:5%;
+    display:grid;
+    grid-gap:1%;
+    grid-template-areas: 
+    "fuelth fuelth"
+    "fueltio fueltio"
+    "fueltto fuelttt";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:10%;
+}
+
+.fuelsecthreehead{
+    grid-area:fuelthh;
+}
+
+.fuelsecthreeimgo{
+    grid-area:fuelthio;
+}
+
+.fuelsecthreeimgt{
+    grid-area:fuelthit;
+}
+
+.fuelsecthreetxto{
+    grid-area:fuelthto;
+}
+
+.fuelsecthreetxtt{
+    grid-area:fuelthtt;
+}
+
+.fuelsecthree{ /*Positioning relevant cotent*/
+    grid-gap:1%;
+    display:grid;
+    grid-template-areas: 
+    "fuelthh fuelthh"
+    "fuelthio fuelthto"
+    "fuelthit fuelthtt";
+    grid-template-columns: 0.4fr 1fr;
+    margin-bottom:10%;
+}
+
+.fuelsecfourhead{
+    grid-area:fuelfh;
+}
+
+.fuelsecfourimgo{
+    grid-area:fuelfio;
+}
+
+.fuelsecfourtxto{
+    grid-area:fuelfto;
+}
+
+.fuelsecfourtxtt{
+    grid-area:fuelftt;
+}
+
+.fuelsecfour{ /*Positioning relevant cotent*/
+    grid-gap:1%;
+    display:grid;
+    grid-template-areas: 
+    "fuelfh fuelfh"
+    "fuelfio fuelfto"
+    "fuelftt fuelftt";
+    grid-template-columns: 0.4fr 1fr;
+}
+
+.calcsectwotxto{
+    grid-area:calctto;
+}
+
+.calcsectwoimgo{
+    grid-area:calctio;
+}
+
+.calcsectwotxtt{
+    grid-area:calcttt;
+}
+
+
+.calcsecone{
+    margin-top:7%;
+}
+
+.calcsectwo{ /*Positioning relevant cotent*/
+    margin-top:5%;
+    display:grid;
+    grid-gap:1%;
+    grid-template-areas: 
+    "calcth calcth"
+    "calctto calctto"
+    "calctio calcttt";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:10%;
+}
+
+.calcsecthreehead{
+    grid-area:calcthh;
+}
+
+.calcsecthreeimgo{
+    grid-area:calcthio;
+}
+
+.calcsecthreetxto{
+    grid-area:calcthto;
+}
+
+.calcsecthree{ /*Positioning relevant cotent*/
+    grid-gap:1%;
+    display:grid;
+    grid-template-areas: 
+    "calcthh calcthh"
+    "calcthio calcthio"
+    "calcthto calcthto";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:10%;
+}
+
+/*Sub STUDYGUIDE area*/
+.sectwoimgo img, .secthreeimgo img, .secthreeimgt img, .secthreeimgth img, .secthreeimgf img{ /*Make sure images fir nicely*/
+    width:100%;
+}
+
+.fuelsecthreeimgo img, .fuelsecthreeimgt img, .fuelsecfourimgo img{
+    width:100%;
+}
+
+.calcsectwoimgo img{
+    width:100%;
+}
+
+.fuelsecthreetxto li, .fuelsecthreetxtt li, .fuelsectwotxtt li, .fuelsectwotxto li{
+    font-size: min(1.2em, 2vw);
+    color:#630000;
+}
+
+.secfourimgo img, .fuelsectwoimgo img, .calcsecthreeimgo img{
+    width:70%;
+    display:block;
+    margin:auto;
+}
+
+.sectwoimgt img{
+    width:70%;
+    display:block;
+    margin:auto;
+}
+
+.sectwotxto p, .secthreetxto p, .secthreetxtt p, .secthreetxtth p{ /*To incite text wrap for better aesthetic purposes*/
+    margin-right:12%;
+}
+
+.secfourtxto{
+    text-align: center;
+}
+
+.secthreehead{
+    margin-bottom: 0%;
+}
+
+.sectwotxtt p{
+    text-align:center;
+}
+
+.orgstudy hr, .fuelstudy hr, .calcstudy hr{
+    margin: 0%;
+}
+
+.secone h2, .fuelsecone h2, .calcsecone h2{
+    margin-top:2%;
+}
+
+.secone h1, .fuelsecone h1, .calcsecone h1{
+    margin-bottom: 1%;
+}
+
+.tonavbutt{ /*Anchor button positioning*/
+    position: fixed;
+    right:7%;
+    bottom:5%;
+}
+
+.tonavbutt a{  /*Anchor styling*/
+    text-decoration: none;
+    font-size: min(2em, 2vw);
+    padding: 0.3em 0.7em 0.3em 0.7em;
+    border-radius: 10%;
+    background-color:#AD0000;
+    color:#fff7f0;
+}
+
+.tonavbutt a:hover{
+    background-color:#fff7f0;
+    color:#630000;
+    border-radius: 0%;;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.subnavcont{
+    margin-top:2%;
+    display:none;
+    background-color: #AD0000;
+    padding-bottom:4%;
+    padding-top:2%;
+    text-align: center;
+}
+
+.subnavcont a{
+    margin:auto;
+    margin-top:1%;
+    margin-bottom:1%;
+    color:#fff7f0;
+    text-decoration: none;
+    font-size: min(2em, 2vw);
+    padding:0.5em 1.5em 0.5em;
+    width:50%;
+}
+
+.subnavcont a:hover{
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+.subnavcollap{
+    text-decoration: none;
+    font-family: "VT323", sans-serif;
+    color:#AD0000;
+    font-size: min(2.5em, 5vw);
+    padding:0.5em 1em 0.5em;
+    width:70%;
+    transition: width 0.3s;
+    display:block;
+    border:none;
+    border-left-style: solid;
+    border-right-style: solid;
+    background-color: #fff7f0;
+    margin:auto;
+}
+
+.subnavcollap:hover{
+    width:100%;
+    background-color:#630000;
+    color:#fff7f0;
+    border:none;
+}
+/*Quiz*/
+.quiz{
+    margin:5% 10% 10%;
+}
+
+.quiz h1{
+    text-align: center;
+}
+
+.quiz p{
+    font-family: "VT323", sans-serif;
+    font-size: min(2em, 3vw);
+    color:#AD0000;
+    text-align: center;
+    margin-top:10%;
+}
+
+.quiznotice{
+    font-family: "Comfortaa", sans-serif;
+}
+
+.quiz hr{
+    margin:0%;
+}
+
+.quiz button{
+    text-decoration: none;
+    font-family: "VT323", sans-serif;
+    color:#AD0000;
+    font-size: min(2.5em, 5vw);
+    padding:0.5em 1em 0.5em;
+    width:20%;
+    transition: width 0.3s;
+    display:block;
+    border:none;
+    border-left-style: solid;
+    border-right-style: solid;
+    background-color: #fff7f0;
+    margin:auto;
+    margin-top:5%;
+}
+
+.quiz button:hover{
+    width:40%;
+}
+
+.mcquest, .cbquest, .imgmcquest{
+    text-align: center;
+    background-color:#AD0000;
+    color:#fff7f0;
+    padding-top:5%;
+    padding-bottom: 5%;
+    margin:2% 10% 2%;
+}
+
+.mcquest label, .cbquest label, .imgmcquest label{
+    color:#fff7f0;
+    padding:0.5em 1em 0.5em;
+    font-size: min(1.2em, 2vw);
+    display:inline-block;
+    border:none;
+    border-right-style:solid;
+    border-left-style:solid;
+    background: none;
+    margin-right:5%;
+    margin-bottom: 1.5%;
+    width:60%;
+    transition: width 0.3s;
+}
+
+.mcquest label:hover, .cbquest label:hover, .imgmcquest label:hover{
+    width:80%;
+}
+
+.imgmcquest img{
+    display:display;
+    width:80%;
+    margin:auto;
+    margin-bottom:5%;
+}
+
+input[type="radio"], input[type="checkbox"]{ /*Styling the inputs*/
+    width:5%;
+    height:5%;
+    accent-color: #AD0000;
+}
+
+@media only screen and (max-width: 600px) { /*Different format for small screen users*/
     h1{
         font-family: "VT323", monospace;
         font-size: min(20em, 15vw);
@@ -527,12 +1050,26 @@ hr{
         font-size: min(9em, 4vw);
     
     }
+
+    /*FOOTER*/
+    .FOOTER{
+      margin:5% 5% 5%;  
+    }
+
+    .FOOTER a{
+        font-size: min(8.5em, 4vw);
+        margin-right:0.5%;
+    }
+
+    .FOOTER p{
+        font-size: min(9em, 4vw);
+    }
     /*NAV*/
     .NAV {
         margin-left:0%;
     }
 
-    .CONTENTCOLLAP{
+    .CONTENTCOLLAP{ /*Positioning relevant cotent*/
         grid-template-areas: 
         "contentone"
         "contenttwo" 
@@ -575,7 +1112,7 @@ hr{
         overflow:hidden;
     }
     /*TOP*/
-    .TOP{
+    .TOP{ /*Positioning relevant cotent*/
         grid-template-areas:
         "TOPIMG"
         "TOPIMG"
@@ -590,7 +1127,7 @@ hr{
     }
 
     /*TOPIC*/
-    .TOPICSEC{
+    .TOPICSEC{ /*Positioning relevant cotent*/
         grid-template-areas:
         "TOPICO"
         "IMGO"
@@ -630,7 +1167,7 @@ hr{
         display: grid;
     }
 
-    .STUDYSEC{
+    .STUDYSEC{ /*Positioning relevant cotent*/
         grid-template-areas:
         "STUDYIO" 
         "STUDYTO" 
@@ -677,8 +1214,14 @@ hr{
         grid-template-areas: 
         "CARDS"
         "FLASHSLIDERS"
+        "ansbut"
         "FLASHANS";
         grid-template-columns: 1fr;
+    }
+
+    .FLASHANS{
+        margin-left:10%;
+        margin-right:10%;
     }
 
     .FLASHHEAD{
@@ -690,6 +1233,207 @@ hr{
     }
 
     .FLASHSLIDERS > a{
+        font-size: min(6em, 4vw);
+        margin:5%;
+    }
+
+    .FLASHSLIDERS .prev{
+        margin-right:15%;
+    }
+     
+    .FLASHSLIDERS .next{
+        margin-left:15%;
+    }
+    
+    .answerbutton{
+        font-size: min(10em, 5vw);
+        width:45%;
+    }
+
+    .answerbutton:hover{
+        width:55%;
+    }
+
+    .CARDS img{
+        width:100%;
+    }
+
+    .aicon img{
+        width:min(20em, 15vw);
+    }
+
+    /*STUDYGUIDE*/
+    .tonavbutt a{
+        font-size: min(10em, 7vw);
+    }
+
+    .subnavcont a{
+        font-size: min(10em, 5vw);
+    }
+
+    .subnavcollap{
+        font-size: min(12.5em, 9vw);
+    }
+
+    .secone, .fuelsecone, .calcsecone{
+        text-align:center;
+        grid-gap:0.5%;
+    }
+
+    .sectwo{ /*Positioning relevant cotent*/
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "orgth"
+        "orgtio" 
+        "orgtto"
+        "orgttt"
+        "orgtit";
+        text-align:center;
+        grid-gap:0.5%;
+    }
+
+    .secthree{ /*Positioning relevant cotent*/
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "orgthh"
+        "bstho"
+        "orgthio" 
+        "orgthto"
+        "bstht"
+        "orgthit"  
+        "orgthtt"
+        "bsthth"
+        "orgthith" 
+        "orgthtth"
+        "bsthf"
+        "orgthif" 
+        "orgthtf";
+        text-align:center;
+        grid-gap:0.5%;
+        margin-bottom:45%;
+    }
+
+    .secfour{ /*Positioning relevant cotent*/
+        grid-template-areas: 
+        "orgfh"
+        "orgfio"
+        "orgfto";
+        grid-template-columns: 1fr;
+        text-align:center;
+        grid-gap:0.5%;
+    }
+
+    .fuelsectwo{ /*Positioning relevant cotent*/
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "fuelth"
+        "fueltio" 
+        "fueltto"
+        "fuelttt";
+        text-align:center;
+        grid-gap:0.5%;
+    }
+
+    .fuelsecthree{ /*Positioning relevant cotent*/
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "fuelthh"
+        "fuelthio" 
+        "fuelthto"
+        "fuelthit"
+        "fuelthtt";
+        text-align:center;
+        grid-gap:0.5%;
+        margin-bottom:20%;
+    }
+
+    .fuelsecfour{ /*Positioning relevant cotent*/
+        grid-template-areas: 
+        "fuelfh"
+        "fuelfio"
+        "fuelfto"
+        "fuelftt";
+        grid-template-columns: 1fr;
+        text-align:center;
+        grid-gap:0.5%;
+    }
+
+    .calcsectwo{ /*Positioning relevant cotent*/
+        grid-template-areas: 
+        "calcth"
+        "calctto" 
+        "calctio"
+        "calcttt";
+        grid-template-columns: 1fr;
+        text-align:center;
+        grid-gap:0.5%;
+    }
+
+    .calcsecthree{ /*Positioning relevant cotent*/
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "calcthh"
+        "calcthio"
+        "calcthto";
+        text-align:center;
+        grid-gap:0.5%;
+    }
+
+
+    .sectwotxto p, .secthreetxto p, .secthreetxtt p, .secthreetxtth p{
+        margin-right:5%;
+        margin-left:5%;
+    }
+
+    .secfourimgo img{
+        width:100%;
+    }
+
+    .sectwoimgt img{
+        width:100%;
+    }
+
+    .fuelsectwoimgo img{
+        width:100%;
+    }
+
+    .calcsecthreeimgo img{
+        width:100%;
+    }
+
+    .fuelsecthreetxto li, .fuelsecthreetxtt li, .fuelsectwotxtt li, .fuelsectwotxto li{
+        text-align:left;
         font-size: min(9em, 4vw);
+    }
+    /*QUIZ*/
+    .quiz p{
+        font-size: min(12.5em, 9vw);
+    }
+
+    .quiz button{
+        font-size: min(12.5em, 9vw);
+        width:60%;
+    }
+
+    .quiz button:hover{
+        width:80%;
+    }
+
+    .mcquest, .cbquest, .imgmcquest{
+        margin:2% 0% 2%;
+    }
+
+    .mcquest label, .cbquest label, .imgmcquest label{
+        font-size: min(9em, 4vw);
+    }
+
+    .mcquest label:hover, .cbquest label:hover, .imgmcquest label:hover{
+        width:60%;
+    }
+
+    input[type="radio"], input[type="checkbox"]{
+        margin-bottom:5%;
+        margin-top:5%;
+        display:inline-block;
     }
 }
