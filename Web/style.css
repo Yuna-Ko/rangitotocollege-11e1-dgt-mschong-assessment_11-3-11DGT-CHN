@@ -29,8 +29,8 @@ a{
 .FOOTER{ /*Footer container*/
     text-align: center;
     margin-bottom: 0%;
-    padding:1% 5% 2%;
-    margin:5% 20% 5%;
+    padding:0.5% 5% 0.5%;
+    margin:3% 20% 3%;
     border-right-style: solid;
     border-left-style: solid;
     color:#AD0000;
@@ -763,7 +763,7 @@ hr{ /*Styling for content separator*/
     "fuelfh fuelfh"
     "fuelfio fuelfto"
     "fuelftt fuelftt";
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .calcsectwotxto{
@@ -776,6 +776,7 @@ hr{ /*Styling for content separator*/
 
 .calcsectwotxtt{
     grid-area:calcttt;
+    margin-top:10%;
 }
 
 
@@ -791,7 +792,7 @@ hr{ /*Styling for content separator*/
     "calcth calcth"
     "calctto calctto"
     "calctio calcttt";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
     margin-bottom:10%;
 }
 
@@ -814,7 +815,7 @@ hr{ /*Styling for content separator*/
     "calcthh calcthh"
     "calcthio calcthio"
     "calcthto calcthto";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
     margin-bottom:10%;
 }
 
@@ -825,6 +826,10 @@ hr{ /*Styling for content separator*/
 
 .fuelsecthreeimgo img, .fuelsecthreeimgt img, .fuelsecfourimgo img{
     width:100%;
+}
+
+.fuelsectwotxto p, .fuelsectwotxtt p{
+    text-align:center;
 }
 
 .calcsectwoimgo img{
@@ -1021,7 +1026,7 @@ hr{ /*Styling for content separator*/
 }
 
 .imgmcquest img{
-    display:display;
+    display:block;
     width:80%;
     margin:auto;
     margin-bottom:5%;
@@ -1377,6 +1382,10 @@ input[type="radio"], input[type="checkbox"]{ /*Styling the inputs*/
         "calcthto";
         text-align:center;
         grid-gap:0.5%;
+    }
+
+    .calcsectwotxtt{
+        margin-top:0%;
     }
 
 
